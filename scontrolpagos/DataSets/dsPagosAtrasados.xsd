@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPagosAtrasados" targetNamespace="http://tempuri.org/dsPagosAtrasados.xsd" xmlns:mstns="http://tempuri.org/dsPagosAtrasados.xsd" xmlns="http://tempuri.org/dsPagosAtrasados.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPagosAtrasados" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPagosAtrasados" msprop:Generator_UserDSName="dsPagosAtrasados">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtdatos" msprop:Generator_TableClassName="dtdatosDataTable" msprop:Generator_TableVarName="tabledtdatos" msprop:Generator_RowChangedName="dtdatosRowChanged" msprop:Generator_TablePropName="dtdatos" msprop:Generator_RowDeletingName="dtdatosRowDeleting" msprop:Generator_RowChangingName="dtdatosRowChanging" msprop:Generator_RowEvHandlerName="dtdatosRowChangeEventHandler" msprop:Generator_RowDeletedName="dtdatosRowDeleted" msprop:Generator_RowClassName="dtdatosRow" msprop:Generator_UserTableName="dtdatos" msprop:Generator_RowEvArgName="dtdatosRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo_socio" msprop:Generator_ColumnVarNameInTable="columncodigo_socio" msprop:Generator_ColumnPropNameInRow="codigo_socio" msprop:Generator_ColumnPropNameInTable="codigo_socioColumn" msprop:Generator_UserColumnName="codigo_socio" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo_socio" msprop:Generator_ColumnVarNameInTable="columntipo_socio" msprop:Generator_ColumnPropNameInRow="tipo_socio" msprop:Generator_ColumnPropNameInTable="tipo_socioColumn" msprop:Generator_UserColumnName="tipo_socio" type="xs:string" minOccurs="0" />
+              <xs:element name="nombre_socio" msprop:Generator_ColumnVarNameInTable="columnnombre_socio" msprop:Generator_ColumnPropNameInRow="nombre_socio" msprop:Generator_ColumnPropNameInTable="nombre_socioColumn" msprop:Generator_UserColumnName="nombre_socio" type="xs:string" minOccurs="0" />
+              <xs:element name="mes_pago" msprop:Generator_ColumnVarNameInTable="columnmes_pago" msprop:Generator_ColumnPropNameInRow="mes_pago" msprop:Generator_ColumnPropNameInTable="mes_pagoColumn" msprop:Generator_UserColumnName="mes_pago" type="xs:string" minOccurs="0" />
+              <xs:element name="anio_pago" msprop:Generator_ColumnVarNameInTable="columnanio_pago" msprop:Generator_ColumnPropNameInRow="anio_pago" msprop:Generator_ColumnPropNameInTable="anio_pagoColumn" msprop:Generator_UserColumnName="anio_pago" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

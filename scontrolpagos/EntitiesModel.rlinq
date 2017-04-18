@@ -1,0 +1,1652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="Entidades" namespace="scontrolpagos" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="Entidades" backend="mysql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="scontrolpagos" default="true" root-namespace="scontrolpagos">
+      <orm:class name="Soc_tds_tipos_de_socios" uniqueId="39128899-94ee-4612-9ee9-5bbfa65db11f">
+        <orm:table name="soc_tds_tipos_de_socios" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Tds_codigo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_tds_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_tds_codigo" property="Tds_codigo" behavior="readwrite" uniqueId="17e6376d-f7bd-4ace-a70f-bac4ba875a80" type="System.Int32">
+          <orm:column name="tds_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_tds_inicial" property="Tds_inicial" behavior="readwrite" uniqueId="d4ed04ac-95f9-436d-bc12-4f950377d9f2" type="System.String">
+          <orm:column name="tds_inicial" sql-type="varchar" nullable="false" length="2" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tds_nombre" property="Tds_nombre" behavior="readwrite" uniqueId="95607a52-79b2-4c01-bbf7-5c46491ca0db" type="System.String">
+          <orm:column name="tds_nombre" sql-type="varchar" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tds_usuario_modificacion" property="Tds_usuario_modificacion" behavior="readwrite" uniqueId="50dc4c65-75df-4be0-b23b-c89733b17f86" type="System.String">
+          <orm:column name="tds_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tds_usuario_grabacion" property="Tds_usuario_grabacion" behavior="readwrite" uniqueId="e07d2524-f741-4357-badc-478f733b462b" type="System.String">
+          <orm:column name="tds_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tds_fecha_modificacion" property="Tds_fecha_modificacion" behavior="readwrite" uniqueId="0957b804-4b8d-4b65-aecc-8c173e9c9743" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tds_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tds_fecha_grabacion" property="Tds_fecha_grabacion" behavior="readwrite" uniqueId="9a045772-400c-4f54-8fc3-ca57cbeae723" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tds_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tds_monto_pago" property="Tds_monto_pago" behavior="readwrite" uniqueId="e66dd2e5-0291-41ad-9cc4-47f3183cde28" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tds_monto_pago" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_soc_soc_socios" property="Soc_soc_socios" behavior="readwrite" access-modifier="private" uniqueId="10638595-ba3d-4b3f-a719-070707dc38b2" type="scontrolpagos.Soc_soc_socios">
+          <orm:collection element-class="scontrolpagos.Soc_soc_socios" inverse-field="_soc_tds_tipos_de_socios" order-by="" uniqueId="393906bf-b132-4dae-b08d-4f4b68104389" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Soc_soc_socios" uniqueId="9ceec396-4a0a-4ebe-83ce-909fa0b6060b">
+        <orm:table name="soc_soc_socios" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Soc_codigo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_soc_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_soc_codigo" property="Soc_codigo" behavior="readwrite" uniqueId="d1f1cfad-dbb3-4869-a37e-83ea796c1e33" type="System.Int32">
+          <orm:column name="soc_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_soc_codper" property="Soc_codper" behavior="readwrite" uniqueId="3d4120bd-e97e-475e-965b-da1e95995920" type="System.Int32">
+          <orm:column name="soc_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_soc_codtds" property="Soc_codtds" behavior="readwrite" uniqueId="3a42b130-c221-454e-a129-06b18f5e6cf2" type="System.Int32">
+          <orm:column name="soc_codtds" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_soc_correlativo" property="Soc_correlativo" behavior="readwrite" uniqueId="3df54a57-1a6f-4fe3-885f-e854557da094" type="System.Int32">
+          <orm:column name="soc_correlativo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_soc_codigo_armado" property="Soc_codigo_armado" behavior="readwrite" uniqueId="f42c1087-2ac3-4204-96ca-bca5baa82181" type="System.String">
+          <orm:column name="soc_codigo_armado" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_soc_estado" property="Soc_estado" behavior="readwrite" uniqueId="4b8f6172-d1f9-49f9-8702-1a72d6fb486b" type="System.String">
+          <orm:column name="soc_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+        </orm:field>
+        <orm:field name="_soc_fecha_inicio_socio" property="Soc_fecha_inicio_socio" behavior="readwrite" uniqueId="9356b07b-43cd-4916-8f18-c87a218fc3a7" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_fecha_inicio_socio" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_soc_fecha_fin_socio" property="Soc_fecha_fin_socio" behavior="readwrite" uniqueId="bc7fecef-840d-493c-b6d9-a8a278fe2a08" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_fecha_fin_socio" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_soc_motivo_fin_socio" property="Soc_motivo_fin_socio" behavior="readwrite" uniqueId="6cd3967e-83e4-47e7-afaf-5dcf5e2b9bc0" type="System.String">
+          <orm:column name="soc_motivo_fin_socio" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_soc_usuario_modificacion" property="Soc_usuario_modificacion" behavior="readwrite" uniqueId="0e7f763c-e00f-4637-8ea1-87c2014622fe" type="System.String">
+          <orm:column name="soc_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_soc_usuario_grabacion" property="Soc_usuario_grabacion" behavior="readwrite" uniqueId="82c319c0-941a-47b1-9db2-7eda4ebcf0b7" type="System.String">
+          <orm:column name="soc_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_soc_UID_4" property="Soc_UID_4" behavior="readwrite" uniqueId="48de64c1-ed19-43b7-b71d-f26c8278f1a1" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_UID_4" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_soc_UID_3" property="Soc_UID_3" behavior="readwrite" uniqueId="0aac91ab-4e0d-4f8f-8bf6-5b2cc3be6dc7" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_UID_3" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_soc_UID_2" property="Soc_UID_2" behavior="readwrite" uniqueId="e28a5d8c-02a0-42bd-8432-c1e5b572b1d5" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_UID_2" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_soc_UID_1" property="Soc_UID_1" behavior="readwrite" uniqueId="e7955664-cdcc-4090-a489-6101cfa658ec" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_UID_1" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_soc_fecha_modificacion" property="Soc_fecha_modificacion" behavior="readwrite" uniqueId="7791c0e4-3ab7-4cb0-8620-dacf1cc918ff" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_soc_fecha_grabacion" property="Soc_fecha_grabacion" behavior="readwrite" uniqueId="c1d8435f-9557-40e3-b429-b4faff83aaad" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="soc_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_grl_per_personas" property="Grl_per_personas" behavior="readwrite" access-modifier="private" uniqueId="e3a7ba36-e22a-437a-aeae-98b8d26365f8" type="scontrolpagos.Grl_per_personas">
+          <orm:reference uniqueId="eb96a238-4f75-4bc3-a655-f78f61b3dc6b" association-name="Soc_soc_sociosHasGrl_per_personas">
+            <orm:sharedfield name="_soc_codper" target-class="scontrolpagos.Grl_per_personas" target-field="_per_codigo" />
+            <orm:constraint name="soc_soc_socios_ibfk_1" delete-action="dbdefaultrule" destination-table="grl_per_personas" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_soc_tds_tipos_de_socios" property="Soc_tds_tipos_de_socios" behavior="readwrite" access-modifier="private" uniqueId="4b9acd83-8605-4ad8-8eb7-51f4b4ac60d6" type="scontrolpagos.Soc_tds_tipos_de_socios">
+          <orm:reference uniqueId="393906bf-b132-4dae-b08d-4f4b68104389" association-name="Soc_soc_sociosHasSoc_tds_tipos_de_socios">
+            <orm:sharedfield name="_soc_codtds" target-class="scontrolpagos.Soc_tds_tipos_de_socios" target-field="_tds_codigo" />
+            <orm:constraint name="soc_soc_socios_ibfk_2" delete-action="dbdefaultrule" destination-table="soc_tds_tipos_de_socios" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_pag_pag_pagos" property="Pag_pag_pagos" behavior="readwrite" access-modifier="private" uniqueId="9e8eb1d7-e847-45c5-ae80-9f8ecb6b09b9" type="scontrolpagos.Pag_pag_pagos">
+          <orm:collection element-class="scontrolpagos.Pag_pag_pagos" inverse-field="_soc_soc_socios" order-by="" uniqueId="d9c2be91-d137-4095-8982-1967b2762a7e" />
+        </orm:field>
+        <orm:index name="soc_codper">
+          <orm:columnMapping>
+            <orm:column name="soc_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:index name="soc_codtds">
+          <orm:columnMapping>
+            <orm:column name="soc_codtds" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Seg_uxr_usuarios_x_role" uniqueId="c96ba1cb-67d1-480d-816a-5b7ec1df3f55">
+        <orm:table name="seg_uxr_usuarios_x_role" />
+        <orm:identity>
+          <orm:single-field field-name="_uxr_codusu" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_uxr_codrol" property="Uxr_codrol" behavior="readwrite" uniqueId="8fd690e1-8bf6-4de2-ac7b-a77d10ecb820" type="System.Int32">
+          <orm:column name="uxr_codrol" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_uxr_codusu" property="Uxr_codusu" behavior="readwrite" uniqueId="a1e63d00-eff9-4503-a15f-f32830e5ff4f" type="System.Int32">
+          <orm:column name="uxr_codusu" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_seg_rol_roles" property="Seg_rol_roles" behavior="readwrite" access-modifier="private" uniqueId="c13be95c-5a49-4d84-9305-4869c0e34da0" type="scontrolpagos.Seg_rol_roles">
+          <orm:reference uniqueId="aa0b9795-390c-4fe9-83a0-eae42a04d3e4" association-name="Seg_uxr_usuarios_x_roleHasSeg_rol_roles">
+            <orm:sharedfield name="_uxr_codrol" target-class="scontrolpagos.Seg_rol_roles" target-field="_rol_codigo" />
+            <orm:constraint name="seg_uxr_usuarios_x_role_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_rol_roles" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_seg_usu_usuarios" property="Seg_usu_usuarios" behavior="readwrite" access-modifier="private" uniqueId="727de7e9-e4ab-43af-9b8e-71c99d93b37b" type="scontrolpagos.Seg_usu_usuarios">
+          <orm:reference uniqueId="77a8ca43-7a5c-4b12-bba0-38f0455b1ad8" association-name="Seg_uxr_usuarios_x_roleHasSeg_usu_usuarios">
+            <orm:sharedfield name="_uxr_codusu" target-class="scontrolpagos.Seg_usu_usuarios" target-field="_usu_codigo" />
+            <orm:constraint name="seg_uxr_usuarios_x_role_ibfk_2" destination-table="seg_usu_usuarios" />
+          </orm:reference>
+        </orm:field>
+        <orm:index name="uxr_codusu">
+          <orm:columnMapping>
+            <orm:column name="uxr_codusu" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Seg_usu_usuarios" uniqueId="e40ede6f-2b36-482e-9271-a48af1580901">
+        <orm:table name="seg_usu_usuarios" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Usu_codigo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_usu_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_usu_codigo" property="Usu_codigo" behavior="readwrite" uniqueId="a1f440dd-83dc-40a1-8780-98bea5c4e3a0" type="System.Int32">
+          <orm:column name="usu_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_usu_nombre" property="Usu_nombre" behavior="readwrite" uniqueId="dc1b6e80-2ca8-467f-b7fd-51e17a63d949" type="System.String">
+          <orm:column name="usu_nombre" sql-type="varchar" nullable="false" length="120" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_usu_usuario" property="Usu_usuario" behavior="readwrite" uniqueId="aee5d240-4c43-40d5-a7bf-af4cf7113604" type="System.String">
+          <orm:column name="usu_usuario" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_usu_password" property="Usu_password" behavior="readwrite" uniqueId="72de4762-7468-4ca6-bb92-3b64495a54ee" type="System.String">
+          <orm:column name="usu_password" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_usu_estado" property="Usu_estado" behavior="readwrite" uniqueId="00b7daa2-5baa-487f-98eb-75e195df4e29" type="System.String">
+          <orm:column name="usu_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+        </orm:field>
+        <orm:field name="_usu_usuario_modificacion" property="Usu_usuario_modificacion" behavior="readwrite" uniqueId="8e3218b7-28b2-4331-9a5f-0c05eaac57ef" type="System.String">
+          <orm:column name="usu_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_usu_usuario_grabacion" property="Usu_usuario_grabacion" behavior="readwrite" uniqueId="ae6cadf0-0443-4c71-98be-db637ef2cb49" type="System.String">
+          <orm:column name="usu_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_usu_fecha_modificacion" property="Usu_fecha_modificacion" behavior="readwrite" uniqueId="5822e0f2-d464-4621-929a-2a0451b0bc08" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="usu_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_usu_fecha_grabacion" property="Usu_fecha_grabacion" behavior="readwrite" uniqueId="d54d44a9-4b81-44db-a876-4758abfc37f5" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="usu_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_usu_codper" property="Usu_codper" behavior="readwrite" uniqueId="05082203-094f-4961-a32a-ac8bd315b48d" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="usu_codper" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_seg_uxr_usuarios_x_roles" property="Seg_uxr_usuarios_x_roles" behavior="readwrite" access-modifier="private" uniqueId="5d1607a7-e059-472c-b099-00cdc775ffb9" type="scontrolpagos.Seg_uxr_usuarios_x_role">
+          <orm:inversereference inverse-field="_seg_usu_usuarios" uniqueId="77a8ca43-7a5c-4b12-bba0-38f0455b1ad8" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Seg_rol_roles" uniqueId="f829f3d5-7201-42eb-abfc-e464547df9a1">
+        <orm:table name="seg_rol_roles" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Rol_codigo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_rol_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_rol_codigo" property="Rol_codigo" behavior="readwrite" uniqueId="2203819a-0165-480b-93cf-f566a2c84d3f" type="System.Int32">
+          <orm:column name="rol_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_rol_descripcion" property="Rol_descripcion" behavior="readwrite" uniqueId="66164ac9-3c44-4864-87ee-8f4ac2a4a876" type="System.String">
+          <orm:column name="rol_descripcion" sql-type="varchar" nullable="false" length="100" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_seg_uxr_usuarios_x_roles" property="Seg_uxr_usuarios_x_roles" behavior="readwrite" access-modifier="private" uniqueId="1f04e8f9-537b-493a-9be8-be1496332263" type="scontrolpagos.Seg_uxr_usuarios_x_role">
+          <orm:collection element-class="scontrolpagos.Seg_uxr_usuarios_x_role" inverse-field="_seg_rol_roles" order-by="" uniqueId="aa0b9795-390c-4fe9-83a0-eae42a04d3e4" />
+        </orm:field>
+        <orm:field name="_seg_aro_autorizaciones_roles" property="Seg_aro_autorizaciones_roles" behavior="readwrite" access-modifier="private" uniqueId="d9196a2f-ead8-428f-b729-99fe265c7338" type="scontrolpagos.Seg_aro_autorizaciones_role">
+          <orm:collection element-class="scontrolpagos.Seg_aro_autorizaciones_role" inverse-field="_seg_rol_roles" order-by="" uniqueId="7edf5351-74db-4e02-a3e1-ad9407192f03" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Seg_oxm_opciones_x_menu" uniqueId="e56abfdc-e4e4-44c2-8925-55199e2a3696">
+        <orm:table name="seg_oxm_opciones_x_menu" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_oxm_codmen" />
+            <orm:single-field field-name="_oxm_codopc" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_oxm_codmen" property="Oxm_codmen" behavior="readwrite" uniqueId="6aebe052-0346-4c7f-9826-4633082f19db" type="System.Int32">
+          <orm:column name="oxm_codmen" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_oxm_codopc" property="Oxm_codopc" behavior="readwrite" uniqueId="cfa432e6-2fe7-4e81-9661-48d19f8e714f" type="System.Int32">
+          <orm:column name="oxm_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_oxm_orden" property="Oxm_orden" behavior="readwrite" uniqueId="044b5f3e-cd0d-4ae9-b7c9-11e2d4c0c61f" type="System.Int32">
+          <orm:column name="oxm_orden" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_seg_men_menus" property="Seg_men_menus" behavior="readwrite" access-modifier="private" uniqueId="1d76ab8f-78ab-4092-843c-78210912bc4a" type="scontrolpagos.Seg_men_menus">
+          <orm:reference uniqueId="cec16b55-2f2f-4ad0-84bb-b36a0b07c2d9" association-name="Seg_oxm_opciones_x_menuHasSeg_men_menus">
+            <orm:sharedfield name="_oxm_codmen" target-class="scontrolpagos.Seg_men_menus" target-field="_men_codigo" />
+            <orm:constraint name="seg_oxm_opciones_x_menu_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_men_menus" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_seg_opc_opciones" property="Seg_opc_opciones" behavior="readwrite" access-modifier="private" uniqueId="c81c0aea-528e-456a-b823-ae5373c053d7" type="scontrolpagos.Seg_opc_opciones">
+          <orm:reference uniqueId="fb2f3cc9-8475-4276-821c-5e46ac512a31" association-name="Seg_oxm_opciones_x_menuHasSeg_opc_opciones">
+            <orm:sharedfield name="_oxm_codopc" target-class="scontrolpagos.Seg_opc_opciones" target-field="_opc_codigo" />
+            <orm:constraint name="seg_oxm_opciones_x_menu_ibfk_2" delete-action="dbdefaultrule" destination-table="seg_opc_opciones" />
+          </orm:reference>
+        </orm:field>
+        <orm:index name="oxm_codopc">
+          <orm:columnMapping>
+            <orm:column name="oxm_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Seg_opc_opciones" uniqueId="4caa9e9f-b5d1-4acf-8269-a3e7de34901b">
+        <orm:table name="seg_opc_opciones" />
+        <orm:identity>
+          <orm:single-field field-name="_opc_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_opc_codigo" property="Opc_codigo" behavior="readwrite" uniqueId="9e91f397-2055-4005-bdea-f83751ee1c85" type="System.Int32">
+          <orm:column name="opc_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_opc_descripcion" property="Opc_descripcion" behavior="readwrite" uniqueId="a6dea682-0a86-4753-b710-daa2a0a122a1" type="System.String">
+          <orm:column name="opc_descripcion" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_opc_titulo" property="Opc_titulo" behavior="readwrite" uniqueId="e03b2901-bedd-4f31-ac07-bd5466560d21" type="System.String">
+          <orm:column name="opc_titulo" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_opc_formulario" property="Opc_formulario" behavior="readwrite" uniqueId="16a92fbc-3ec3-44c7-9b9c-e43c4a64ac33" type="System.String">
+          <orm:column name="opc_formulario" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_seg_oxm_opciones_x_menus" property="Seg_oxm_opciones_x_menus" behavior="readwrite" access-modifier="private" uniqueId="f47ee87d-da8a-4377-958e-7b8896c84712" type="scontrolpagos.Seg_oxm_opciones_x_menu">
+          <orm:collection element-class="scontrolpagos.Seg_oxm_opciones_x_menu" inverse-field="_seg_opc_opciones" order-by="" uniqueId="fb2f3cc9-8475-4276-821c-5e46ac512a31" />
+        </orm:field>
+        <orm:field name="_seg_axo_acciones_x_opcions" property="Seg_axo_acciones_x_opcions" behavior="readwrite" access-modifier="private" uniqueId="39203e27-8648-4231-bb34-7dbf372f4380" type="scontrolpagos.Seg_axo_acciones_x_opcion">
+          <orm:collection element-class="scontrolpagos.Seg_axo_acciones_x_opcion" inverse-field="_seg_opc_opciones" order-by="" uniqueId="a9154b62-7eb7-4e5c-bb91-d23244f0ebda" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Seg_men_menus" uniqueId="ce31a947-6e61-47d3-a547-a44db401098d">
+        <orm:table name="seg_men_menus" />
+        <orm:identity>
+          <orm:single-field field-name="_men_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_men_codigo" property="Men_codigo" behavior="readwrite" uniqueId="4df204f5-06e8-4536-ad25-665f6a7d6979" type="System.Int32">
+          <orm:column name="men_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_men_codmen_padre" property="Men_codmen_padre" behavior="readwrite" uniqueId="4865ef88-6284-4b7f-9ecb-1fd5ed631601" type="System.Int32">
+          <orm:column name="men_codmen_padre" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_men_descripcion" property="Men_descripcion" behavior="readwrite" uniqueId="1990cdbd-0c4e-42d0-91ab-24ff53f1aed6" type="System.String">
+          <orm:column name="men_descripcion" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_men_titulo" property="Men_titulo" behavior="readwrite" uniqueId="52c3ef92-5c04-4ec8-8b91-3fb5ef60a548" type="System.String">
+          <orm:column name="men_titulo" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_men_orden" property="Men_orden" behavior="readwrite" uniqueId="be4cbcd8-180c-4aa1-9f8e-714f56e4e4a3" type="System.Int32">
+          <orm:column name="men_orden" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_seg_men_menus1" property="Seg_men_menus1" behavior="readwrite" access-modifier="private" uniqueId="217d0a43-6a3d-45c1-9c53-a2cb51263af4" type="scontrolpagos.Seg_men_menus">
+          <orm:reference uniqueId="0ee9e93e-5c72-4cdb-898a-1cf87880a3ba" association-name="Seg_men_menusHasSeg_men_menus">
+            <orm:sharedfield name="_men_codmen_padre" target-class="scontrolpagos.Seg_men_menus" target-field="_men_codigo" />
+            <orm:constraint name="seg_men_menus_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_men_menus" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_seg_oxm_opciones_x_menus" property="Seg_oxm_opciones_x_menus" behavior="readwrite" access-modifier="private" uniqueId="cbb4e0cd-653d-4d72-974f-90fd2c4ebb08" type="scontrolpagos.Seg_oxm_opciones_x_menu">
+          <orm:collection element-class="scontrolpagos.Seg_oxm_opciones_x_menu" inverse-field="_seg_men_menus" order-by="" uniqueId="cec16b55-2f2f-4ad0-84bb-b36a0b07c2d9" />
+        </orm:field>
+        <orm:field name="_seg_men_menus11" property="Seg_men_menus11" behavior="readwrite" access-modifier="private" uniqueId="e4838bbc-f7a9-4551-a93f-87343a4a9d89" type="scontrolpagos.Seg_men_menus">
+          <orm:collection element-class="scontrolpagos.Seg_men_menus" inverse-field="_seg_men_menus1" order-by="" uniqueId="0ee9e93e-5c72-4cdb-898a-1cf87880a3ba" />
+        </orm:field>
+        <orm:index name="men_codmen_padre">
+          <orm:columnMapping>
+            <orm:column name="men_codmen_padre" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Seg_axo_acciones_x_opcion" uniqueId="22dfc577-ddc3-4e04-b1a9-c0da2c9eaad2">
+        <orm:table name="seg_axo_acciones_x_opcion" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_axo_codopc" />
+            <orm:single-field field-name="_axo_codacc" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_axo_codopc" property="Axo_codopc" behavior="readwrite" uniqueId="3c8ee210-9c0e-43e0-85e3-6837dd66bd01" type="System.Int32">
+          <orm:column name="axo_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_axo_codacc" property="Axo_codacc" behavior="readwrite" uniqueId="28a33af8-e8f1-48ba-8061-90ba9a978ded" type="System.Int32">
+          <orm:column name="axo_codacc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_seg_opc_opciones" property="Seg_opc_opciones" behavior="readwrite" access-modifier="private" uniqueId="da5a1ba8-3244-4b8d-a25f-34ab66444c05" type="scontrolpagos.Seg_opc_opciones">
+          <orm:reference uniqueId="a9154b62-7eb7-4e5c-bb91-d23244f0ebda" association-name="Seg_axo_acciones_x_opcionHasSeg_opc_opciones">
+            <orm:sharedfield name="_axo_codopc" target-class="scontrolpagos.Seg_opc_opciones" target-field="_opc_codigo" />
+            <orm:constraint name="seg_axo_acciones_x_opcion_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_opc_opciones" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_seg_acc_acciones" property="Seg_acc_acciones" behavior="readwrite" access-modifier="private" uniqueId="604fcfef-a895-4298-a328-cbb8ea5f57e3" type="scontrolpagos.Seg_acc_acciones">
+          <orm:reference uniqueId="498471b5-f9bd-4168-be25-2fb9d81ee434" association-name="Seg_axo_acciones_x_opcionHasSeg_acc_acciones">
+            <orm:sharedfield name="_axo_codacc" target-class="scontrolpagos.Seg_acc_acciones" target-field="_acc_codigo" />
+            <orm:constraint name="seg_axo_acciones_x_opcion_ibfk_2" delete-action="dbdefaultrule" destination-table="seg_acc_acciones" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_seg_aro_autorizaciones_roles" property="Seg_aro_autorizaciones_roles" behavior="readwrite" access-modifier="private" uniqueId="1021a098-7d09-4047-83ff-42800eaca363" type="scontrolpagos.Seg_aro_autorizaciones_role">
+          <orm:collection element-class="scontrolpagos.Seg_aro_autorizaciones_role" inverse-field="_seg_axo_acciones_x_opcion" order-by="" uniqueId="184b7df5-d2e3-4836-9cc4-51ad6332b938" />
+        </orm:field>
+        <orm:index name="axo_codacc">
+          <orm:columnMapping>
+            <orm:column name="axo_codacc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Seg_aro_autorizaciones_role" uniqueId="1541798a-6499-442e-b42f-fd2f038a85a7">
+        <orm:table name="seg_aro_autorizaciones_role" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_aro_codrol" />
+            <orm:single-field field-name="_aro_codopc" />
+            <orm:single-field field-name="_aro_codaxo" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_aro_codrol" property="Aro_codrol" behavior="readwrite" uniqueId="a59e106e-2512-4780-a86a-f82e7d8bfc54" type="System.Int32">
+          <orm:column name="aro_codrol" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_aro_codopc" property="Aro_codopc" behavior="readwrite" uniqueId="d1e1e45b-1a9c-45d9-a36b-d72f52bc61ac" type="System.Int32">
+          <orm:column name="aro_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_aro_codaxo" property="Aro_codaxo" behavior="readwrite" uniqueId="f6e15286-ed47-43fc-bb6a-8f5a26c0a046" type="System.Int32">
+          <orm:column name="aro_codaxo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_seg_rol_roles" property="Seg_rol_roles" behavior="readwrite" access-modifier="private" uniqueId="5b16fa4a-c466-4047-9fc9-ad895d69c3e3" type="scontrolpagos.Seg_rol_roles">
+          <orm:reference uniqueId="7edf5351-74db-4e02-a3e1-ad9407192f03" association-name="Seg_aro_autorizaciones_roleHasSeg_rol_roles">
+            <orm:sharedfield name="_aro_codrol" target-class="scontrolpagos.Seg_rol_roles" target-field="_rol_codigo" />
+            <orm:constraint name="seg_aro_autorizaciones_role_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_rol_roles" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_seg_axo_acciones_x_opcion" property="Seg_axo_acciones_x_opcion" behavior="readwrite" access-modifier="private" uniqueId="1290d128-785c-429f-9def-3b15d8df87bb" type="scontrolpagos.Seg_axo_acciones_x_opcion">
+          <orm:reference uniqueId="184b7df5-d2e3-4836-9cc4-51ad6332b938" association-name="Seg_aro_autorizaciones_roleHasSeg_axo_acciones_x_opcion">
+            <orm:sharedfield name="_aro_codopc" target-class="scontrolpagos.Seg_axo_acciones_x_opcion" target-field="_axo_codopc" />
+            <orm:sharedfield name="_aro_codaxo" target-class="scontrolpagos.Seg_axo_acciones_x_opcion" target-field="_axo_codacc" />
+            <orm:constraint name="seg_aro_autorizaciones_role_ibfk_2" delete-action="dbdefaultrule" destination-table="seg_axo_acciones_x_opcion" />
+          </orm:reference>
+        </orm:field>
+        <orm:index name="aro_codopc">
+          <orm:columnMapping>
+            <orm:column name="aro_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+          <orm:columnMapping>
+            <orm:column name="aro_codaxo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Seg_acc_acciones" uniqueId="39fe446d-645b-4782-b54e-09810c9e0246">
+        <orm:table name="seg_acc_acciones" />
+        <orm:identity>
+          <orm:single-field field-name="_acc_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_acc_codigo" property="Acc_codigo" behavior="readwrite" uniqueId="90067b38-931c-4af2-9f44-d750686562f6" type="System.Int32">
+          <orm:column name="acc_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_acc_descripcion" property="Acc_descripcion" behavior="readwrite" uniqueId="978c24ae-6f18-41d5-a0a0-bb11ed593814" type="System.String">
+          <orm:column name="acc_descripcion" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_seg_axo_acciones_x_opcions" property="Seg_axo_acciones_x_opcions" behavior="readwrite" access-modifier="private" uniqueId="40acc09f-2e3c-4675-a88a-838ee40b655b" type="scontrolpagos.Seg_axo_acciones_x_opcion">
+          <orm:collection element-class="scontrolpagos.Seg_axo_acciones_x_opcion" inverse-field="_seg_acc_acciones" order-by="" uniqueId="498471b5-f9bd-4168-be25-2fb9d81ee434" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Pag_pag_pagos" uniqueId="f8e9d00d-8134-4ea4-8646-3cd165cf353b">
+        <orm:table name="pag_pag_pagos" />
+        <orm:identity>
+          <orm:single-field field-name="_pag_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_pag_codsoc" property="Pag_codsoc" behavior="readwrite" uniqueId="1a637f66-fc24-4037-ba22-ca7f0f2caa39" type="System.Int32">
+          <orm:column name="pag_codsoc" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_codcob" property="Pag_codcob" behavior="readwrite" uniqueId="626f17e8-a845-4be5-a317-2e59e0a6ceee" type="System.Int32">
+          <orm:column name="pag_codcob" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_monto" property="Pag_monto" behavior="readwrite" uniqueId="c570c153-f16b-4f95-afad-32c0f00db693" type="System.Decimal">
+          <orm:column name="pag_monto" sql-type="decimal" nullable="false" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_pag_mes" property="Pag_mes" behavior="readwrite" uniqueId="a61e0c01-70dd-4dfe-8570-9e6c54d64f6c" type="System.Int32">
+          <orm:column name="pag_mes" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_año" property="Pag_año" behavior="readwrite" uniqueId="d0db4f73-361b-4a10-91b0-a7bc246ced3a" type="System.Int32">
+          <orm:column name="pag_año" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_fecha_recibido" property="Pag_fecha_recibido" behavior="readwrite" uniqueId="2798e4f0-57a9-4122-bb83-5ab38b9dc94d" type="System.DateTime">
+          <orm:column name="pag_fecha_recibido" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_pag_observaciones" property="Pag_observaciones" behavior="readwrite" uniqueId="276b86da-e592-490a-89ef-09c49c9c218b" type="System.String">
+          <orm:column name="pag_observaciones" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_pag_usuario_modificacion" property="Pag_usuario_modificacion" behavior="readwrite" uniqueId="b44d3de1-63cf-4c02-9a35-0f0f3ec9eb23" type="System.String">
+          <orm:column name="pag_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_pag_usuario_grabacion" property="Pag_usuario_grabacion" behavior="readwrite" uniqueId="33625570-f7dc-4779-acb4-8f468bf846e9" type="System.String">
+          <orm:column name="pag_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_pag_fecha_modificacion" property="Pag_fecha_modificacion" behavior="readwrite" uniqueId="f4cbbb5a-eef8-45df-83c6-bb49cc077bd7" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_pag_fecha_grabacion" property="Pag_fecha_grabacion" behavior="readwrite" uniqueId="02b06fd3-56a2-4ed0-8421-524dfb66c4e0" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_pag_numero_recibo" property="Pag_numero_recibo" behavior="readwrite" uniqueId="98db5eb6-5391-4161-9b4b-efda70930551" type="System.Int32">
+          <orm:column name="pag_numero_recibo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_codigo" property="Pag_codigo" behavior="readwrite" uniqueId="07d74f77-a51e-4a2d-af58-feffab47f563" type="System.Int32">
+          <orm:column name="pag_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_soc_soc_socios" property="Soc_soc_socios" behavior="readwrite" access-modifier="private" uniqueId="a7763a33-1332-4be5-a992-edd5865f6997" type="scontrolpagos.Soc_soc_socios">
+          <orm:reference uniqueId="d9c2be91-d137-4095-8982-1967b2762a7e" association-name="Pag_pag_pagosHasSoc_soc_socios">
+            <orm:sharedfield name="_pag_codsoc" target-class="scontrolpagos.Soc_soc_socios" target-field="_soc_codigo" />
+            <orm:constraint name="pag_pag_pagos_ibfk_1" delete-action="dbdefaultrule" destination-table="soc_soc_socios" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_pag_cob_cobradores" property="Pag_cob_cobradores" behavior="readwrite" access-modifier="private" uniqueId="6da2077f-7787-4783-bda0-6cef4231b56f" type="scontrolpagos.Pag_cob_cobradores">
+          <orm:reference uniqueId="99a02feb-2e82-48dd-8584-4c339cb14c47" association-name="Pag_pag_pagosHasPag_cob_cobradores">
+            <orm:sharedfield name="_pag_codcob" target-class="scontrolpagos.Pag_cob_cobradores" target-field="_cob_codigo" />
+            <orm:constraint name="pag_pag_pagos_ibfk_3" delete-action="dbdefaultrule" destination-table="pag_cob_cobradores" />
+          </orm:reference>
+        </orm:field>
+        <orm:index name="pag_codcob">
+          <orm:columnMapping>
+            <orm:column name="pag_codcob" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Pag_cob_cobradores" uniqueId="f6e6429b-160b-434f-aa64-b0607bf3f87e">
+        <orm:table name="pag_cob_cobradores" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Cob_codigo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_cob_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_cob_codigo" property="Cob_codigo" behavior="readwrite" uniqueId="e93c1240-e588-43c8-8853-27e2aac45cc7" type="System.Int32">
+          <orm:column name="cob_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_cob_codper" property="Cob_codper" behavior="readwrite" uniqueId="0b646953-eb37-44ec-9f68-089df05edd6a" type="System.Int32">
+          <orm:column name="cob_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_cob_porcentaje_comision" property="Cob_porcentaje_comision" behavior="readwrite" uniqueId="6f724f7b-a2d8-4bc5-8322-4384af721c46" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="cob_porcentaje_comision" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_grl_per_personas" property="Grl_per_personas" behavior="readwrite" access-modifier="private" uniqueId="c6ff873d-8ddd-4827-82f3-0ce6c6344b7b" type="scontrolpagos.Grl_per_personas">
+          <orm:reference uniqueId="0c4cb605-d617-4d65-b5d7-26aec36ac03e" association-name="Pag_cob_cobradoresHasGrl_per_personas">
+            <orm:sharedfield name="_cob_codper" target-class="scontrolpagos.Grl_per_personas" target-field="_per_codigo" />
+            <orm:constraint name="pag_cob_cobradores_ibfk_1" delete-action="dbdefaultrule" destination-table="grl_per_personas" />
+          </orm:reference>
+        </orm:field>
+        <orm:field name="_pag_pag_pagos" property="Pag_pag_pagos" behavior="readwrite" access-modifier="private" uniqueId="cd9f4d7d-d98c-418b-a724-4b5e77fca753" type="scontrolpagos.Pag_pag_pagos">
+          <orm:collection element-class="scontrolpagos.Pag_pag_pagos" inverse-field="_pag_cob_cobradores" order-by="" uniqueId="99a02feb-2e82-48dd-8584-4c339cb14c47" />
+        </orm:field>
+        <orm:index name="cob_codper">
+          <orm:columnMapping>
+            <orm:column name="cob_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="Grl_per_personas" uniqueId="c64b11c6-7dad-470c-8d9f-d09c16f0b0fe">
+        <orm:table name="grl_per_personas" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Per_codigo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_per_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_per_codigo" property="Per_codigo" behavior="readwrite" uniqueId="1d378a11-01ef-48e4-9c7d-e73fe144b3b0" type="System.Int32">
+          <orm:column name="per_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_per_primer_nombre" property="Per_primer_nombre" behavior="readwrite" uniqueId="74c76ca3-a098-4471-b0bb-9991943dab84" type="System.String">
+          <orm:column name="per_primer_nombre" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_segundo_nombre" property="Per_segundo_nombre" behavior="readwrite" uniqueId="6e6a5199-2f1f-4c47-b57e-b25739615a7d" type="System.String">
+          <orm:column name="per_segundo_nombre" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_primer_apellido" property="Per_primer_apellido" behavior="readwrite" uniqueId="7de6c033-397d-49cb-aa3e-dcf437cfe331" type="System.String">
+          <orm:column name="per_primer_apellido" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_segundo_apellido" property="Per_segundo_apellido" behavior="readwrite" uniqueId="c4ee71ae-9443-4386-8b3d-b79b17ff286b" type="System.String">
+          <orm:column name="per_segundo_apellido" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_apellido_casada" property="Per_apellido_casada" behavior="readwrite" uniqueId="12c195a4-679a-41d0-8e69-e228737a95ea" type="System.String">
+          <orm:column name="per_apellido_casada" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_nombre_completo" property="Per_nombre_completo" behavior="readwrite" uniqueId="2f73073d-db99-44ec-b7de-7774a917443c" type="System.String">
+          <orm:column name="per_nombre_completo" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_DPI" property="Per_DPI" behavior="readwrite" uniqueId="6c7e7a4e-8b13-4904-bda1-808644e852a4" type="System.String">
+          <orm:column name="per_DPI" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_cedula" property="Per_cedula" behavior="readwrite" uniqueId="a7a07f62-d0fc-4dd8-9fcb-c78e9c5bb2c8" type="System.String">
+          <orm:column name="per_cedula" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_departamento_extendida" property="Per_departamento_extendida" behavior="readwrite" uniqueId="401204f7-cf0a-4651-b817-18dc366a80ac" type="System.String">
+          <orm:column name="per_departamento_extendida" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_municipio_extendida" property="Per_municipio_extendida" behavior="readwrite" uniqueId="276ee29f-fb35-43dc-a599-f9dab76c4df2" type="System.String">
+          <orm:column name="per_municipio_extendida" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_direccion_cobro" property="Per_direccion_cobro" behavior="readwrite" uniqueId="d186dcb9-c04d-4f21-b691-afb91df69e46" type="System.String">
+          <orm:column name="per_direccion_cobro" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_telefonos" property="Per_telefonos" behavior="readwrite" uniqueId="ec826cfc-825c-4c61-a614-9f6b51a4a65e" type="System.String">
+          <orm:column name="per_telefonos" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_celulares" property="Per_celulares" behavior="readwrite" uniqueId="d7b2cadf-1d6b-4758-b6d9-c7ec380ad014" type="System.String">
+          <orm:column name="per_celulares" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_correo_electronico" property="Per_correo_electronico" behavior="readwrite" uniqueId="46125381-e192-4dbb-962e-43ac206da715" type="System.String">
+          <orm:column name="per_correo_electronico" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_per_fecha_nacimiento" property="Per_fecha_nacimiento" behavior="readwrite" uniqueId="8eb931e7-752d-48cb-b7a8-0e64efb70f56" type="System.DateTime">
+          <orm:column name="per_fecha_nacimiento" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_per_foto" property="Per_foto" behavior="readwrite" uniqueId="37035458-4f2c-410d-8557-523939f795bd" type="System.Byte[]">
+          <orm:column name="per_foto" sql-type="blob" nullable="true" length="0" scale="0" ado-type="LongVarBinary" />
+        </orm:field>
+        <orm:field name="_per_estado" property="Per_estado" behavior="readwrite" uniqueId="402f141e-e96f-456c-859d-c322e3eaf7ea" type="System.String">
+          <orm:column name="per_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+        </orm:field>
+        <orm:field name="_soc_soc_socios" property="Soc_soc_socios" behavior="readwrite" access-modifier="private" uniqueId="bd4b70e7-8f7d-4d84-952f-5d6254424d2b" type="scontrolpagos.Soc_soc_socios">
+          <orm:collection element-class="scontrolpagos.Soc_soc_socios" inverse-field="_grl_per_personas" order-by="" uniqueId="eb96a238-4f75-4bc3-a655-f78f61b3dc6b" />
+        </orm:field>
+        <orm:field name="_pag_cob_cobradores" property="Pag_cob_cobradores" behavior="readwrite" access-modifier="private" uniqueId="28df1e34-edd7-4128-8f57-4d45bc059572" type="scontrolpagos.Pag_cob_cobradores">
+          <orm:collection element-class="scontrolpagos.Pag_cob_cobradores" inverse-field="_grl_per_personas" order-by="" uniqueId="0c4cb605-d617-4d65-b5d7-26aec36ac03e" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Sociosmorosos" uniqueId="1266e75b-6b70-4117-8370-3a4d73b40ee9">
+        <orm:table name="sociosmorosos" view="true" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_mes_pago" />
+            <orm:single-field field-name="_codigo_socio" />
+            <orm:single-field field-name="_anio_pago" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_tipo_socio" property="Tipo_socio" behavior="readwrite" uniqueId="7e90942f-efd6-440d-8e59-f24299c63ba3" type="System.Int32">
+          <orm:column name="tipo_socio" sql-type="integer" nullable="false" length="0" scale="0" has-default-value="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nombre_socio" property="Nombre_socio" behavior="readwrite" uniqueId="b22f42fe-8d93-46dc-8ecf-0ea117ae4009" type="System.String">
+          <orm:column name="nombre_socio" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_mes_pago" property="Mes_pago" behavior="readwrite" uniqueId="b8615582-a5d7-43de-a028-3a632a146a65" type="System.Int32">
+          <orm:column name="mes_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_codigo_socio" property="Codigo_socio" behavior="readwrite" uniqueId="c526d970-ddee-4d0c-a9d2-044138dd905d" type="System.String">
+          <orm:column name="codigo_socio" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_anio_pago" property="Anio_pago" behavior="readwrite" uniqueId="9c47850f-9614-4936-a822-763ab45b49be" type="System.Int32">
+          <orm:column name="anio_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Controlpagos" uniqueId="164fc09f-e717-4084-8a0c-a896c3db3c5c">
+        <orm:table name="controlpagos" view="true" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_mes_pago" />
+            <orm:single-field field-name="_codigo_socio" />
+            <orm:single-field field-name="_anio_pago" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_tipo_socio" property="Tipo_socio" behavior="readwrite" uniqueId="66915418-4d94-4de9-9aa7-58e5533be0e0" type="System.String">
+          <orm:column name="tipo_socio" sql-type="varchar" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_numero_recibo" property="Numero_recibo" behavior="readwrite" uniqueId="ec8a3c39-fabb-4d8f-b510-c563d7cca33e" type="System.Int32">
+          <orm:column name="numero_recibo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nombre_socio" property="Nombre_socio" behavior="readwrite" uniqueId="6df39ffb-7440-432c-bf1f-aead45c208ac" type="System.String">
+          <orm:column name="nombre_socio" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_mes_pago" property="Mes_pago" behavior="readwrite" uniqueId="fcdfa74e-274f-4b77-a3f5-6f5aac6ca3f9" type="System.Int32">
+          <orm:column name="mes_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_dpi_socio" property="Dpi_socio" behavior="readwrite" uniqueId="fe60646b-5d40-4e67-b29e-a7ee4cb12f45" type="System.String">
+          <orm:column name="dpi_socio" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_codigo_socio" property="Codigo_socio" behavior="readwrite" uniqueId="602feb0e-26cb-4e6e-94e0-2b862697d21b" type="System.String">
+          <orm:column name="codigo_socio" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_cedula_socio" property="Cedula_socio" behavior="readwrite" uniqueId="172e0f0c-ccbf-4e71-a307-57616a5bf0d5" type="System.String">
+          <orm:column name="cedula_socio" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_anio_pago" property="Anio_pago" behavior="readwrite" uniqueId="f3ca59e3-6854-488c-b422-218e555718ce" type="System.Int32">
+          <orm:column name="anio_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Comisionxcobrador" uniqueId="a5caa82f-c61f-4460-aa55-af6a3c23f456">
+        <orm:table name="comisionxcobrador" view="true" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_mES_PAGO" />
+            <orm:single-field field-name="_codigo_socio" />
+            <orm:single-field field-name="_año_pago" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_tipo_socio" property="Tipo_socio" behavior="readwrite" uniqueId="3f90077d-b9ac-40af-8955-81bd1d5e98c3" type="System.String">
+          <orm:column name="tipo_socio" sql-type="varchar" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_numero_recibo" property="Numero_recibo" behavior="readwrite" uniqueId="58af53b4-d747-4553-8eb9-e0679edd9e9a" type="System.Int32">
+          <orm:column name="numero_recibo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nombre_socio" property="Nombre_socio" behavior="readwrite" uniqueId="930bbe9c-0aee-4e96-8766-f4b4e1805a6c" type="System.String">
+          <orm:column name="nombre_socio" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_nombre_cobrador" property="Nombre_cobrador" behavior="readwrite" uniqueId="db9c813e-459b-434b-bb13-294e46630ae8" type="System.String">
+          <orm:column name="nombre_cobrador" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_monto_recibo" property="Monto_recibo" behavior="readwrite" uniqueId="08244e6e-5f90-4114-b62c-82783c81ccf1" type="System.Decimal">
+          <orm:column name="monto_recibo" sql-type="decimal" nullable="false" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_mES_PAGO" property="MES_PAGO" behavior="readwrite" uniqueId="819fada8-d6f7-4b6e-91cb-849a90123295" type="System.String">
+          <orm:column name="MES_PAGO" sql-type="varchar" nullable="true" length="10" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_fecha_recibo" property="Fecha_recibo" behavior="readwrite" uniqueId="e7ba9635-cab8-4fe6-92c4-5da7bed9e325" type="System.DateTime">
+          <orm:column name="fecha_recibo" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_comision" property="Comision" behavior="readwrite" uniqueId="3cd72292-5347-4440-b2cc-b0783bb86c04" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="comision" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_codigo_socio" property="Codigo_socio" behavior="readwrite" uniqueId="f9ce1eaa-f03f-4886-8f80-ae277306bf48" type="System.String">
+          <orm:column name="codigo_socio" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_año_pago" property="Año_pago" behavior="readwrite" uniqueId="ae68325c-442c-4d95-b914-a595afe0366c" type="System.Int32">
+          <orm:column name="año_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Pag_pag_pagos_hist" uniqueId="7e762e63-908d-4edd-80d6-528a40760731">
+        <orm:table name="pag_pag_pagos_hist" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Pag_correlativo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_pag_correlativo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_pag_correlativo" property="Pag_correlativo" behavior="readwrite" uniqueId="0abadeaa-d748-4c9a-a74c-0365a1781209" type="System.Int32">
+          <orm:column name="pag_correlativo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_codigo" property="Pag_codigo" behavior="readwrite" uniqueId="31c0c2e7-4f6f-4cda-b680-896ebd73cfc5" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_codigo" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_codsoc" property="Pag_codsoc" behavior="readwrite" uniqueId="a1a532f7-ea7e-4793-8279-90b2517594d2" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_codsoc" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_codcob" property="Pag_codcob" behavior="readwrite" uniqueId="4ccdff98-2f2d-4c2d-b0ba-925054382706" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_codcob" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_monto" property="Pag_monto" behavior="readwrite" uniqueId="3fd021fc-f48b-449f-960a-d1927ce89489" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_monto" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_pag_mes" property="Pag_mes" behavior="readwrite" uniqueId="c2dda4d7-9a78-42f1-8955-61af30d3c588" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_mes" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_año" property="Pag_año" behavior="readwrite" uniqueId="0b3fc02d-60c1-40c7-9337-f81a47d4d701" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_año" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_numero_recibo" property="Pag_numero_recibo" behavior="readwrite" uniqueId="50bb4aed-4f68-47e3-8bce-ef5a513031e9" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_numero_recibo" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_pag_fecha_recibido" property="Pag_fecha_recibido" behavior="readwrite" uniqueId="44fa32fc-1cb1-40ec-b5b8-869938b91c3d" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_fecha_recibido" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_pag_observaciones" property="Pag_observaciones" behavior="readwrite" uniqueId="266c5339-9473-4161-9711-25750d508e9b" type="System.String">
+          <orm:column name="pag_observaciones" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_pag_usuario_grabacion" property="Pag_usuario_grabacion" behavior="readwrite" uniqueId="22ddea2b-446c-4384-96cd-2d893b11cf7b" type="System.String">
+          <orm:column name="pag_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_pag_fecha_grabacion" property="Pag_fecha_grabacion" behavior="readwrite" uniqueId="9db3e407-49cc-4229-940a-7b511af97046" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_pag_usuario_modificacion" property="Pag_usuario_modificacion" behavior="readwrite" uniqueId="e67d48d3-a31d-4e62-9c7b-fe086326bbcc" type="System.String">
+          <orm:column name="pag_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_pag_fecha_modificacion" property="Pag_fecha_modificacion" behavior="readwrite" uniqueId="eca667d3-4b18-4037-aae9-417e7858d289" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="pag_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_pag_descripcion" property="Pag_descripcion" behavior="readwrite" uniqueId="6db83069-2dff-4c69-b023-c980e489b61a" type="System.String">
+          <orm:column name="pag_descripcion" sql-type="varchar" nullable="true" length="4000" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Tar_tar_tarjetas" uniqueId="ca84013d-b694-4535-b36b-f7cfdf1ac917">
+        <orm:table name="tar_tar_tarjetas" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Tar_codigo" />
+          </orm:key-generator>
+          <orm:single-field field-name="_tar_codigo" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_tar_codigo" property="Tar_codigo" behavior="readwrite" uniqueId="3ce02675-860c-4cb8-847d-3f04df1d5736" type="System.Int32">
+          <orm:column name="tar_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_tar_tipo" property="Tar_tipo" behavior="readwrite" uniqueId="b1628e3c-3214-408c-8d8f-4cf2f702dfc8" type="System.Int32">
+          <orm:column name="tar_tipo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_tar_nombre" property="Tar_nombre" behavior="readwrite" uniqueId="91550388-69d5-4226-9c19-8e5b07241523" type="System.String">
+          <orm:column name="tar_nombre" sql-type="varchar" nullable="false" length="60" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tar_numero" property="Tar_numero" behavior="readwrite" uniqueId="666479e0-260e-4424-9cbf-0c0d4fd6112b" type="System.Int32">
+          <orm:column name="tar_numero" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_tar_fecha_hora_ingreso" property="Tar_fecha_hora_ingreso" behavior="readwrite" uniqueId="1587bec9-3445-4818-8ece-147857aaabc4" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_fecha_hora_ingreso" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_tar_fecha_hora_activacion" property="Tar_fecha_hora_activacion" behavior="readwrite" uniqueId="450015de-87c3-46e6-ac32-c5a2b640777d" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_fecha_hora_activacion" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_tar_fecha_hora_inicio_vigencia" property="Tar_fecha_hora_inicio_vigencia" behavior="readwrite" uniqueId="6009fc8f-41de-41b9-81db-1891bc8fb8f9" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_fecha_hora_inicio_vigencia" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_tar_fecha_hora_fin_vigencia" property="Tar_fecha_hora_fin_vigencia" behavior="readwrite" uniqueId="6e1ce58a-b49d-4008-ab42-4b4559d506ba" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_fecha_hora_fin_vigencia" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_tar_observaciones" property="Tar_observaciones" behavior="readwrite" uniqueId="57dcd620-6b91-4963-8937-26117362a431" type="System.String">
+          <orm:column name="tar_observaciones" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tar_estado" property="Tar_estado" behavior="readwrite" uniqueId="94822245-d65d-4fa0-861e-a8d405810999" type="System.String">
+          <orm:column name="tar_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+        </orm:field>
+        <orm:field name="_tar_UID_1" property="Tar_UID_1" behavior="readwrite" uniqueId="50a31eaa-6b4a-4231-8d33-664ee3a19b3f" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_UID_1" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_tar_UID_2" property="Tar_UID_2" behavior="readwrite" uniqueId="8c401b97-9b4e-480f-90d0-ef1c12a884eb" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_UID_2" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_tar_UID_3" property="Tar_UID_3" behavior="readwrite" uniqueId="990260f5-25ff-419a-af01-0ad23d9a7c4f" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_UID_3" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_tar_UID_4" property="Tar_UID_4" behavior="readwrite" uniqueId="b526cc21-b392-4dc4-b8dd-99db600d1804" type="System.Nullable`1[[System.Int16, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_UID_4" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        </orm:field>
+        <orm:field name="_tar_usuario_grabacion" property="Tar_usuario_grabacion" behavior="readwrite" uniqueId="2a2fde69-743d-4e62-a5fc-c98c3853b310" type="System.String">
+          <orm:column name="tar_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tar_fecha_grabacion" property="Tar_fecha_grabacion" behavior="readwrite" uniqueId="ccfa74f4-8076-43c8-9a50-d0183b5d6786" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_fecha_grabacion" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_tar_usuario_modificacion" property="Tar_usuario_modificacion" behavior="readwrite" uniqueId="b7fbd220-2aae-4a5e-b970-aaef40584b3b" type="System.String">
+          <orm:column name="tar_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="_tar_fecha_modificacion" property="Tar_fecha_modificacion" behavior="readwrite" uniqueId="41043dc1-0d45-4c09-8cee-671425611ab3" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="tar_fecha_modificacion" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="soc_tds_tipos_de_socios">
+        <orm:column name="tds_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="tds_inicial" sql-type="varchar" nullable="false" length="2" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tds_nombre" sql-type="varchar" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tds_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tds_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tds_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="tds_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="tds_monto_pago" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+      </orm:table>
+      <orm:table name="soc_soc_socios">
+        <orm:column name="soc_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="soc_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="soc_codtds" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="soc_correlativo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="soc_codigo_armado" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="soc_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+        <orm:column name="soc_fecha_inicio_socio" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="soc_fecha_fin_socio" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="soc_motivo_fin_socio" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="soc_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="soc_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="soc_UID_4" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="soc_UID_3" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="soc_UID_2" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="soc_UID_1" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="soc_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="soc_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:index name="soc_codper">
+          <orm:columnMapping>
+            <orm:column name="soc_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:index name="soc_codtds">
+          <orm:columnMapping>
+            <orm:column name="soc_codtds" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="soc_soc_socios_ibfk_1" delete-action="dbdefaultrule" destination-table="grl_per_personas">
+          <orm:column name="soc_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="soc_soc_socios_ibfk_2" delete-action="dbdefaultrule" destination-table="soc_tds_tipos_de_socios">
+          <orm:column name="soc_codtds" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="seg_uxr_usuarios_x_role">
+        <orm:column name="uxr_codrol" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="uxr_codusu" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:index name="uxr_codusu">
+          <orm:columnMapping>
+            <orm:column name="uxr_codusu" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="seg_uxr_usuarios_x_role_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_rol_roles">
+          <orm:column name="uxr_codrol" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="seg_uxr_usuarios_x_role_ibfk_2" destination-table="seg_usu_usuarios">
+          <orm:column name="uxr_codusu" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="seg_usu_usuarios">
+        <orm:column name="usu_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="usu_nombre" sql-type="varchar" nullable="false" length="120" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="usu_usuario" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="usu_password" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="usu_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+        <orm:column name="usu_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="usu_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="usu_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="usu_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="usu_codper" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+      </orm:table>
+      <orm:table name="seg_rol_roles">
+        <orm:column name="rol_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="rol_descripcion" sql-type="varchar" nullable="false" length="100" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="seg_oxm_opciones_x_menu">
+        <orm:column name="oxm_codmen" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="oxm_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="oxm_orden" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:index name="oxm_codopc">
+          <orm:columnMapping>
+            <orm:column name="oxm_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="seg_oxm_opciones_x_menu_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_men_menus">
+          <orm:column name="oxm_codmen" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="seg_oxm_opciones_x_menu_ibfk_2" delete-action="dbdefaultrule" destination-table="seg_opc_opciones">
+          <orm:column name="oxm_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="seg_opc_opciones">
+        <orm:column name="opc_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="opc_descripcion" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="opc_titulo" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="opc_formulario" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="seg_men_menus">
+        <orm:column name="men_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="men_codmen_padre" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="men_descripcion" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="men_titulo" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="men_orden" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:index name="men_codmen_padre">
+          <orm:columnMapping>
+            <orm:column name="men_codmen_padre" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="seg_men_menus_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_men_menus">
+          <orm:column name="men_codmen_padre" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="seg_axo_acciones_x_opcion">
+        <orm:column name="axo_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="axo_codacc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:index name="axo_codacc">
+          <orm:columnMapping>
+            <orm:column name="axo_codacc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="seg_axo_acciones_x_opcion_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_opc_opciones">
+          <orm:column name="axo_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="seg_axo_acciones_x_opcion_ibfk_2" delete-action="dbdefaultrule" destination-table="seg_acc_acciones">
+          <orm:column name="axo_codacc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="seg_aro_autorizaciones_role">
+        <orm:column name="aro_codrol" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="aro_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="aro_codaxo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:index name="aro_codopc">
+          <orm:columnMapping>
+            <orm:column name="aro_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+          <orm:columnMapping>
+            <orm:column name="aro_codaxo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="seg_aro_autorizaciones_role_ibfk_1" delete-action="dbdefaultrule" destination-table="seg_rol_roles">
+          <orm:column name="aro_codrol" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="seg_aro_autorizaciones_role_ibfk_2" delete-action="dbdefaultrule" destination-table="seg_axo_acciones_x_opcion">
+          <orm:column name="aro_codopc" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+          <orm:column name="aro_codaxo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="seg_acc_acciones">
+        <orm:column name="acc_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="acc_descripcion" sql-type="varchar" nullable="false" length="30" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="pag_pag_pagos">
+        <orm:column name="pag_codsoc" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_codcob" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_monto" sql-type="decimal" nullable="false" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="pag_mes" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_año" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_fecha_recibido" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        <orm:column name="pag_observaciones" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="pag_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="pag_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="pag_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="pag_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="pag_numero_recibo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:index name="pag_codcob">
+          <orm:columnMapping>
+            <orm:column name="pag_codcob" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="pag_pag_pagos_ibfk_1" delete-action="dbdefaultrule" destination-table="soc_soc_socios">
+          <orm:column name="pag_codsoc" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+        <orm:constraint name="pag_pag_pagos_ibfk_3" delete-action="dbdefaultrule" destination-table="pag_cob_cobradores">
+          <orm:column name="pag_codcob" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="pag_cob_cobradores">
+        <orm:column name="cob_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="cob_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="cob_porcentaje_comision" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:index name="cob_codper">
+          <orm:columnMapping>
+            <orm:column name="cob_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="pag_cob_cobradores_ibfk_1" delete-action="dbdefaultrule" destination-table="grl_per_personas">
+          <orm:column name="cob_codper" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="grl_per_personas">
+        <orm:column name="per_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="per_primer_nombre" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_segundo_nombre" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_primer_apellido" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_segundo_apellido" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_apellido_casada" sql-type="varchar" nullable="true" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_nombre_completo" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_DPI" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_cedula" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_departamento_extendida" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_municipio_extendida" sql-type="varchar" nullable="true" length="2" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_direccion_cobro" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_telefonos" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_celulares" sql-type="varchar" nullable="true" length="10" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_correo_electronico" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="per_fecha_nacimiento" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        <orm:column name="per_foto" sql-type="blob" nullable="true" length="0" scale="0" ado-type="LongVarBinary" />
+        <orm:column name="per_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+      </orm:table>
+      <orm:table name="imagen">
+        <orm:column name="id" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" has-default-value="true" ado-type="Int32" />
+        <orm:column name="imagen" sql-type="mediumblob" nullable="true" length="0" scale="0" ado-type="LongVarBinary" />
+      </orm:table>
+      <orm:table name="pag_pag_pagos_hist">
+        <orm:column name="pag_correlativo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="pag_codigo" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_codsoc" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_codcob" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_monto" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="pag_mes" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_año" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_numero_recibo" sql-type="integer" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="pag_fecha_recibido" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="pag_observaciones" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="pag_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="pag_fecha_grabacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="pag_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="pag_fecha_modificacion" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="pag_descripcion" sql-type="varchar" nullable="true" length="4000" scale="0" ado-type="StringVariableLength" />
+      </orm:table>
+      <orm:table name="tar_tar_tarjetas">
+        <orm:column name="tar_codigo" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="tar_tipo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="tar_nombre" sql-type="varchar" nullable="false" length="60" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tar_numero" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="tar_fecha_hora_ingreso" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="tar_fecha_hora_activacion" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="tar_fecha_hora_inicio_vigencia" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="tar_fecha_hora_fin_vigencia" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="tar_observaciones" sql-type="varchar" nullable="true" length="100" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tar_estado" sql-type="enum" nullable="false" length="0" scale="0" ado-type="Character" />
+        <orm:column name="tar_UID_1" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="tar_UID_2" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="tar_UID_3" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="tar_UID_4" sql-type="smallint" nullable="true" length="0" scale="0" ado-type="Int16" />
+        <orm:column name="tar_usuario_grabacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tar_fecha_grabacion" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="tar_usuario_modificacion" sql-type="varchar" nullable="true" length="20" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="tar_fecha_modificacion" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+      </orm:table>
+      <orm:table name="sociosmorosos" view="true">
+        <orm:column name="tipo_socio" sql-type="integer" nullable="false" length="0" scale="0" has-default-value="true" ado-type="Int32" />
+        <orm:column name="nombre_socio" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="mes_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="codigo_socio" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        <orm:column name="anio_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+      </orm:table>
+      <orm:table name="controlpagos" view="true">
+        <orm:column name="tipo_socio" sql-type="varchar" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="numero_recibo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="nombre_socio" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="mes_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="dpi_socio" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="codigo_socio" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        <orm:column name="cedula_socio" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="anio_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+      </orm:table>
+      <orm:table name="comisionxcobrador" view="true">
+        <orm:column name="tipo_socio" sql-type="varchar" nullable="false" length="40" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="numero_recibo" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="nombre_socio" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="nombre_cobrador" sql-type="varchar" nullable="true" length="120" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="monto_recibo" sql-type="decimal" nullable="false" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="MES_PAGO" sql-type="varchar" nullable="true" length="10" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        <orm:column name="fecha_recibo" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        <orm:column name="comision" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="codigo_socio" sql-type="varchar" nullable="false" length="20" scale="0" primary-key="true" ado-type="StringVariableLength" />
+        <orm:column name="año_pago" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+      </orm:table>
+      <orm:procedure name="CrearUsuario">
+        <orm:procedure-parameter name="_Usuario" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" mode="in" type="System.String" />
+        <orm:procedure-parameter name="_Pass" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" mode="in" type="System.String" />
+        <orm:result-sets />
+      </orm:procedure>
+      <orm:procedure name="ActualizaPassword">
+        <orm:procedure-parameter name="_Usuario" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" mode="in" type="System.String" />
+        <orm:procedure-parameter name="_Pass" sql-type="varchar" nullable="false" length="20" scale="0" ado-type="StringVariableLength" mode="in" type="System.String" />
+        <orm:result-sets />
+      </orm:procedure>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>cn</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>server=localhost;database=scontrolpagos;uid=root;pwd=admin</AppConfigConnectionString>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+      <NavigationPropertyRules />
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings />
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MySql</Backend>
+        <ProviderName>MySql.Data.MySqlClient</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="39128899-94ee-4612-9ee9-5bbfa65db11f" name="Soc_tds_tipos_de_socios" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Tds_codigo">
+      <Property Id="17e6376d-f7bd-4ace-a70f-bac4ba875a80" name="Tds_codigo" type="Int32" label="Tds_codigo : Int32" kind="Persistent" identity="true" fieldName="_tds_codigo" />
+      <Property Id="d4ed04ac-95f9-436d-bc12-4f950377d9f2" name="Tds_inicial" label="Tds_inicial : String" kind="Persistent" fieldName="_tds_inicial" />
+      <Property Id="95607a52-79b2-4c01-bbf7-5c46491ca0db" name="Tds_nombre" label="Tds_nombre : String" kind="Persistent" fieldName="_tds_nombre" />
+      <Property Id="50dc4c65-75df-4be0-b23b-c89733b17f86" name="Tds_usuario_modificacion" label="Tds_usuario_modificacion : String" kind="Persistent" fieldName="_tds_usuario_modificacion" />
+      <Property Id="e07d2524-f741-4357-badc-478f733b462b" name="Tds_usuario_grabacion" label="Tds_usuario_grabacion : String" kind="Persistent" fieldName="_tds_usuario_grabacion" />
+      <Property Id="0957b804-4b8d-4b65-aecc-8c173e9c9743" name="Tds_fecha_modificacion" type="DateTime" label="Tds_fecha_modificacion : DateTime" nullable="true" kind="Persistent" fieldName="_tds_fecha_modificacion" />
+      <Property Id="9a045772-400c-4f54-8fc3-ca57cbeae723" name="Tds_fecha_grabacion" type="DateTime" label="Tds_fecha_grabacion : DateTime" nullable="true" kind="Persistent" fieldName="_tds_fecha_grabacion" />
+      <Property Id="e66dd2e5-0291-41ad-9cc4-47f3183cde28" name="Tds_monto_pago" type="Decimal" label="Tds_monto_pago : Decimal" nullable="true" kind="Persistent" fieldName="_tds_monto_pago" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="9566ce3b-0300-4e28-9b4d-9058ef41cb63">
+          <NavigationalProperty Id="10638595-ba3d-4b3f-a719-070707dc38b2" name="Soc_soc_socios" type="IList&lt;Soc_soc_socios&gt;" accessModifier="Private" label="Soc_soc_socios : IList&lt;Soc_soc_socios&gt;" nullable="true" kind="Persistent" fieldName="_soc_soc_socios" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="9ceec396-4a0a-4ebe-83ce-909fa0b6060b" name="Soc_soc_socios" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Soc_codigo">
+      <Property Id="d1f1cfad-dbb3-4869-a37e-83ea796c1e33" name="Soc_codigo" type="Int32" label="Soc_codigo : Int32" kind="Persistent" identity="true" fieldName="_soc_codigo" />
+      <Property Id="f42c1087-2ac3-4204-96ca-bca5baa82181" name="Soc_codigo_armado" label="Soc_codigo_armado : String" kind="Persistent" fieldName="_soc_codigo_armado" />
+      <Property Id="3d4120bd-e97e-475e-965b-da1e95995920" name="Soc_codper" type="Int32" label="Soc_codper : Int32" kind="Persistent" fieldName="_soc_codper" />
+      <Property Id="3a42b130-c221-454e-a129-06b18f5e6cf2" name="Soc_codtds" type="Int32" label="Soc_codtds : Int32" kind="Persistent" fieldName="_soc_codtds" />
+      <Property Id="3df54a57-1a6f-4fe3-885f-e854557da094" name="Soc_correlativo" type="Int32" label="Soc_correlativo : Int32" kind="Persistent" fieldName="_soc_correlativo" />
+      <Property Id="4b8f6172-d1f9-49f9-8702-1a72d6fb486b" name="Soc_estado" label="Soc_estado : String" kind="Persistent" fieldName="_soc_estado" />
+      <Property Id="bc7fecef-840d-493c-b6d9-a8a278fe2a08" name="Soc_fecha_fin_socio" type="DateTime" label="Soc_fecha_fin_socio : DateTime" nullable="true" kind="Persistent" fieldName="_soc_fecha_fin_socio" />
+      <Property Id="9356b07b-43cd-4916-8f18-c87a218fc3a7" name="Soc_fecha_inicio_socio" type="DateTime" label="Soc_fecha_inicio_socio : DateTime" nullable="true" kind="Persistent" fieldName="_soc_fecha_inicio_socio" />
+      <Property Id="6cd3967e-83e4-47e7-afaf-5dcf5e2b9bc0" name="Soc_motivo_fin_socio" label="Soc_motivo_fin_socio : String" kind="Persistent" fieldName="_soc_motivo_fin_socio" />
+      <Property Id="0e7f763c-e00f-4637-8ea1-87c2014622fe" name="Soc_usuario_modificacion" label="Soc_usuario_modificacion : String" kind="Persistent" fieldName="_soc_usuario_modificacion" />
+      <Property Id="82c319c0-941a-47b1-9db2-7eda4ebcf0b7" name="Soc_usuario_grabacion" label="Soc_usuario_grabacion : String" kind="Persistent" fieldName="_soc_usuario_grabacion" />
+      <Property Id="48de64c1-ed19-43b7-b71d-f26c8278f1a1" name="Soc_UID_4" type="Int16" label="Soc_UID_4 : Int16" nullable="true" kind="Persistent" fieldName="_soc_UID_4" />
+      <Property Id="0aac91ab-4e0d-4f8f-8bf6-5b2cc3be6dc7" name="Soc_UID_3" type="Int16" label="Soc_UID_3 : Int16" nullable="true" kind="Persistent" fieldName="_soc_UID_3" />
+      <Property Id="e28a5d8c-02a0-42bd-8432-c1e5b572b1d5" name="Soc_UID_2" type="Int16" label="Soc_UID_2 : Int16" nullable="true" kind="Persistent" fieldName="_soc_UID_2" />
+      <Property Id="e7955664-cdcc-4090-a489-6101cfa658ec" name="Soc_UID_1" type="Int16" label="Soc_UID_1 : Int16" nullable="true" kind="Persistent" fieldName="_soc_UID_1" />
+      <Property Id="7791c0e4-3ab7-4cb0-8620-dacf1cc918ff" name="Soc_fecha_modificacion" type="DateTime" label="Soc_fecha_modificacion : DateTime" nullable="true" kind="Persistent" fieldName="_soc_fecha_modificacion" />
+      <Property Id="c1d8435f-9557-40e3-b429-b4faff83aaad" name="Soc_fecha_grabacion" type="DateTime" label="Soc_fecha_grabacion : DateTime" nullable="true" kind="Persistent" fieldName="_soc_fecha_grabacion" />
+      <AssociationTargets>
+        <Association Id="eb96a238-4f75-4bc3-a655-f78f61b3dc6b" SourceMultiplicity="One" name="Soc_soc_sociosHasGrl_per_personas">
+          <DomainClassMoniker name="/Entidades/Grl_per_personas" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="fdf147e8-91b7-4355-9550-6fcdc4d5dbd3">
+              <NavigationalPropertyMoniker name="/Entidades/Grl_per_personas/Soc_soc_socios" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="794df623-9e66-4ebb-8ee7-60ced39786e8">
+              <NavigationalPropertyMoniker name="/Entidades/Soc_soc_socios/Grl_per_personas" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="393906bf-b132-4dae-b08d-4f4b68104389" SourceMultiplicity="One" name="Soc_soc_sociosHasSoc_tds_tipos_de_socios">
+          <DomainClassMoniker name="/Entidades/Soc_tds_tipos_de_socios" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="84878d83-df7e-4889-98e7-dcd834040ca4">
+              <NavigationalPropertyMoniker name="/Entidades/Soc_tds_tipos_de_socios/Soc_soc_socios" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="825fb229-d47e-4329-86af-c0a593183f7d">
+              <NavigationalPropertyMoniker name="/Entidades/Soc_soc_socios/Soc_tds_tipos_de_socios" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="c51dc547-2ce5-4da2-9a92-22fb3012273a">
+          <NavigationalProperty Id="e3a7ba36-e22a-437a-aeae-98b8d26365f8" name="Grl_per_personas" type="Grl_per_personas" accessModifier="Private" label="Grl_per_personas : Grl_per_personas" nullable="true" kind="Persistent" fieldName="_grl_per_personas" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="a4dddd49-cd99-4a2c-b9c8-5419691bbb90">
+          <NavigationalProperty Id="4b9acd83-8605-4ad8-8eb7-51f4b4ac60d6" name="Soc_tds_tipos_de_socios" type="Soc_tds_tipos_de_socios" accessModifier="Private" label="Soc_tds_tipos_de_socios : Soc_tds_tipos_de_socios" nullable="true" kind="Persistent" fieldName="_soc_tds_tipos_de_socios" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="49494435-9b9e-46a6-893a-e2b24f3cd4b1">
+          <NavigationalProperty Id="9e8eb1d7-e847-45c5-ae80-9f8ecb6b09b9" name="Pag_pag_pagos" type="IList&lt;Pag_pag_pagos&gt;" accessModifier="Private" label="Pag_pag_pagos : IList&lt;Pag_pag_pagos&gt;" nullable="true" kind="Persistent" fieldName="_pag_pag_pagos" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="c96ba1cb-67d1-480d-816a-5b7ec1df3f55" name="Seg_uxr_usuarios_x_role" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="8fd690e1-8bf6-4de2-ac7b-a77d10ecb820" name="Uxr_codrol" type="Int32" label="Uxr_codrol : Int32" kind="Persistent" fieldName="_uxr_codrol" />
+      <Property Id="a1e63d00-eff9-4503-a15f-f32830e5ff4f" name="Uxr_codusu" type="Int32" label="Uxr_codusu : Int32" kind="Persistent" identity="true" fieldName="_uxr_codusu" />
+      <AssociationTargets>
+        <Association Id="aa0b9795-390c-4fe9-83a0-eae42a04d3e4" SourceMultiplicity="One" name="Seg_uxr_usuarios_x_roleHasSeg_rol_roles">
+          <DomainClassMoniker name="/Entidades/Seg_rol_roles" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="a2013792-06aa-4be2-8fc4-a0b7cba0a965">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_rol_roles/Seg_uxr_usuarios_x_roles" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="373a1f4a-1f21-431a-984f-474b655afd04">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_uxr_usuarios_x_role/Seg_rol_roles" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="77a8ca43-7a5c-4b12-bba0-38f0455b1ad8" SourceMultiplicity="One" name="Seg_uxr_usuarios_x_roleHasSeg_usu_usuarios">
+          <DomainClassMoniker name="/Entidades/Seg_usu_usuarios" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="899710eb-6bf2-40c1-b2f0-e5c790bd8af9">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_usu_usuarios/Seg_uxr_usuarios_x_roles" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="ddedb1cb-1621-487c-a67d-2c6a85547af5">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_uxr_usuarios_x_role/Seg_usu_usuarios" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="b75724b4-5ecd-4216-91dd-b311b065f2f8">
+          <NavigationalProperty Id="c13be95c-5a49-4d84-9305-4869c0e34da0" name="Seg_rol_roles" type="Seg_rol_roles" accessModifier="Private" label="Seg_rol_roles : Seg_rol_roles" nullable="true" kind="Persistent" fieldName="_seg_rol_roles" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="1faaf077-4e0a-4123-a38d-909582605ccc">
+          <NavigationalProperty Id="727de7e9-e4ab-43af-9b8e-71c99d93b37b" name="Seg_usu_usuarios" type="Seg_usu_usuarios" accessModifier="Private" label="Seg_usu_usuarios : Seg_usu_usuarios" nullable="true" kind="Persistent" fieldName="_seg_usu_usuarios" isDependent="false" isManaged="true" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="e40ede6f-2b36-482e-9271-a48af1580901" name="Seg_usu_usuarios" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Usu_codigo">
+      <Property Id="a1f440dd-83dc-40a1-8780-98bea5c4e3a0" name="Usu_codigo" type="Int32" label="Usu_codigo : Int32" kind="Persistent" identity="true" fieldName="_usu_codigo" />
+      <Property Id="00b7daa2-5baa-487f-98eb-75e195df4e29" name="Usu_estado" label="Usu_estado : String" kind="Persistent" fieldName="_usu_estado" />
+      <Property Id="dc1b6e80-2ca8-467f-b7fd-51e17a63d949" name="Usu_nombre" label="Usu_nombre : String" kind="Persistent" fieldName="_usu_nombre" />
+      <Property Id="72de4762-7468-4ca6-bb92-3b64495a54ee" name="Usu_password" label="Usu_password : String" kind="Persistent" fieldName="_usu_password" />
+      <Property Id="aee5d240-4c43-40d5-a7bf-af4cf7113604" name="Usu_usuario" label="Usu_usuario : String" kind="Persistent" fieldName="_usu_usuario" />
+      <Property Id="8e3218b7-28b2-4331-9a5f-0c05eaac57ef" name="Usu_usuario_modificacion" label="Usu_usuario_modificacion : String" kind="Persistent" fieldName="_usu_usuario_modificacion" />
+      <Property Id="ae6cadf0-0443-4c71-98be-db637ef2cb49" name="Usu_usuario_grabacion" label="Usu_usuario_grabacion : String" kind="Persistent" fieldName="_usu_usuario_grabacion" />
+      <Property Id="5822e0f2-d464-4621-929a-2a0451b0bc08" name="Usu_fecha_modificacion" type="DateTime" label="Usu_fecha_modificacion : DateTime" nullable="true" kind="Persistent" fieldName="_usu_fecha_modificacion" />
+      <Property Id="d54d44a9-4b81-44db-a876-4758abfc37f5" name="Usu_fecha_grabacion" type="DateTime" label="Usu_fecha_grabacion : DateTime" nullable="true" kind="Persistent" fieldName="_usu_fecha_grabacion" />
+      <Property Id="05082203-094f-4961-a32a-ac8bd315b48d" name="Usu_codper" type="Int32" label="Usu_codper : Int32" nullable="true" kind="Persistent" fieldName="_usu_codper" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="080cb071-83aa-4283-9b4f-efa1960ab771">
+          <NavigationalProperty Id="5d1607a7-e059-472c-b099-00cdc775ffb9" name="Seg_uxr_usuarios_x_roles" type="IList&lt;Seg_uxr_usuarios_x_role&gt;" accessModifier="Private" label="Seg_uxr_usuarios_x_roles : IList&lt;Seg_uxr_usuarios_x_role&gt;" nullable="true" kind="Persistent" fieldName="_seg_uxr_usuarios_x_roles" isDependent="false" isManaged="true" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="f829f3d5-7201-42eb-abfc-e464547df9a1" name="Seg_rol_roles" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Rol_codigo">
+      <Property Id="2203819a-0165-480b-93cf-f566a2c84d3f" name="Rol_codigo" type="Int32" label="Rol_codigo : Int32" kind="Persistent" identity="true" fieldName="_rol_codigo" />
+      <Property Id="66164ac9-3c44-4864-87ee-8f4ac2a4a876" name="Rol_descripcion" label="Rol_descripcion : String" kind="Persistent" fieldName="_rol_descripcion" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="6f4a5e0b-1271-466a-a77e-e7c81b1302ad">
+          <NavigationalProperty Id="1f04e8f9-537b-493a-9be8-be1496332263" name="Seg_uxr_usuarios_x_roles" type="IList&lt;Seg_uxr_usuarios_x_role&gt;" accessModifier="Private" label="Seg_uxr_usuarios_x_roles : IList&lt;Seg_uxr_usuarios_x_role&gt;" nullable="true" kind="Persistent" fieldName="_seg_uxr_usuarios_x_roles" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="a72f3bad-f93b-4462-b4e8-2c09c9a7b9e6">
+          <NavigationalProperty Id="d9196a2f-ead8-428f-b729-99fe265c7338" name="Seg_aro_autorizaciones_roles" type="IList&lt;Seg_aro_autorizaciones_role&gt;" accessModifier="Private" label="Seg_aro_autorizaciones_roles : IList&lt;Seg_aro_autorizaciones_role&gt;" nullable="true" kind="Persistent" fieldName="_seg_aro_autorizaciones_roles" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="e56abfdc-e4e4-44c2-8925-55199e2a3696" name="Seg_oxm_opciones_x_menu" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="6aebe052-0346-4c7f-9826-4633082f19db" name="Oxm_codmen" type="Int32" label="Oxm_codmen : Int32" kind="Persistent" identity="true" fieldName="_oxm_codmen" />
+      <Property Id="cfa432e6-2fe7-4e81-9661-48d19f8e714f" name="Oxm_codopc" type="Int32" label="Oxm_codopc : Int32" kind="Persistent" identity="true" fieldName="_oxm_codopc" />
+      <Property Id="044b5f3e-cd0d-4ae9-b7c9-11e2d4c0c61f" name="Oxm_orden" type="Int32" label="Oxm_orden : Int32" kind="Persistent" fieldName="_oxm_orden" />
+      <AssociationTargets>
+        <Association Id="cec16b55-2f2f-4ad0-84bb-b36a0b07c2d9" SourceMultiplicity="One" name="Seg_oxm_opciones_x_menuHasSeg_men_menus">
+          <DomainClassMoniker name="/Entidades/Seg_men_menus" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="cf544ee1-445f-4caf-8e9d-aff4991eb70c">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_men_menus/Seg_oxm_opciones_x_menus" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="e8364265-7874-467a-a621-274571156689">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_oxm_opciones_x_menu/Seg_men_menus" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="fb2f3cc9-8475-4276-821c-5e46ac512a31" SourceMultiplicity="One" name="Seg_oxm_opciones_x_menuHasSeg_opc_opciones">
+          <DomainClassMoniker name="/Entidades/Seg_opc_opciones" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="1440da62-a719-4c76-a239-f435aec62c59">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_opc_opciones/Seg_oxm_opciones_x_menus" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="e7351acf-6cd4-498f-ad79-2ba08baa1bd1">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_oxm_opciones_x_menu/Seg_opc_opciones" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="80d6426b-29e3-4763-8801-504fba3f71f7">
+          <NavigationalProperty Id="1d76ab8f-78ab-4092-843c-78210912bc4a" name="Seg_men_menus" type="Seg_men_menus" accessModifier="Private" label="Seg_men_menus : Seg_men_menus" nullable="true" kind="Persistent" fieldName="_seg_men_menus" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="820ddf6b-de0a-40f4-9378-5bd00a56ca52">
+          <NavigationalProperty Id="c81c0aea-528e-456a-b823-ae5373c053d7" name="Seg_opc_opciones" type="Seg_opc_opciones" accessModifier="Private" label="Seg_opc_opciones : Seg_opc_opciones" nullable="true" kind="Persistent" fieldName="_seg_opc_opciones" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="4caa9e9f-b5d1-4acf-8269-a3e7de34901b" name="Seg_opc_opciones" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="9e91f397-2055-4005-bdea-f83751ee1c85" name="Opc_codigo" type="Int32" label="Opc_codigo : Int32" kind="Persistent" identity="true" fieldName="_opc_codigo" />
+      <Property Id="a6dea682-0a86-4753-b710-daa2a0a122a1" name="Opc_descripcion" label="Opc_descripcion : String" kind="Persistent" fieldName="_opc_descripcion" />
+      <Property Id="e03b2901-bedd-4f31-ac07-bd5466560d21" name="Opc_titulo" label="Opc_titulo : String" kind="Persistent" fieldName="_opc_titulo" />
+      <Property Id="16a92fbc-3ec3-44c7-9b9c-e43c4a64ac33" name="Opc_formulario" label="Opc_formulario : String" kind="Persistent" fieldName="_opc_formulario" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="ab88700c-1105-446d-abdc-92010c063bb3">
+          <NavigationalProperty Id="f47ee87d-da8a-4377-958e-7b8896c84712" name="Seg_oxm_opciones_x_menus" type="IList&lt;Seg_oxm_opciones_x_menu&gt;" accessModifier="Private" label="Seg_oxm_opciones_x_menus : IList&lt;Seg_oxm_opciones_x_menu&gt;" nullable="true" kind="Persistent" fieldName="_seg_oxm_opciones_x_menus" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="5c8a3f76-7064-4441-aa4d-bc3c443c76b1">
+          <NavigationalProperty Id="39203e27-8648-4231-bb34-7dbf372f4380" name="Seg_axo_acciones_x_opcions" type="IList&lt;Seg_axo_acciones_x_opcion&gt;" accessModifier="Private" label="Seg_axo_acciones_x_opcions : IList&lt;Seg_axo_acciones_x_opcion&gt;" nullable="true" kind="Persistent" fieldName="_seg_axo_acciones_x_opcions" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="ce31a947-6e61-47d3-a547-a44db401098d" name="Seg_men_menus" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="4df204f5-06e8-4536-ad25-665f6a7d6979" name="Men_codigo" type="Int32" label="Men_codigo : Int32" kind="Persistent" identity="true" fieldName="_men_codigo" />
+      <Property Id="4865ef88-6284-4b7f-9ecb-1fd5ed631601" name="Men_codmen_padre" type="Int32" label="Men_codmen_padre : Int32" kind="Persistent" fieldName="_men_codmen_padre" />
+      <Property Id="1990cdbd-0c4e-42d0-91ab-24ff53f1aed6" name="Men_descripcion" label="Men_descripcion : String" kind="Persistent" fieldName="_men_descripcion" />
+      <Property Id="be4cbcd8-180c-4aa1-9f8e-714f56e4e4a3" name="Men_orden" type="Int32" label="Men_orden : Int32" kind="Persistent" fieldName="_men_orden" />
+      <Property Id="52c3ef92-5c04-4ec8-8b91-3fb5ef60a548" name="Men_titulo" label="Men_titulo : String" kind="Persistent" fieldName="_men_titulo" />
+      <AssociationTargets>
+        <Association Id="0ee9e93e-5c72-4cdb-898a-1cf87880a3ba" SourceMultiplicity="One" name="Seg_men_menusHasSeg_men_menus">
+          <DomainClassMoniker name="/Entidades/Seg_men_menus" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="aada6512-945f-4874-b276-a12fdcda2e2e">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_men_menus/Seg_men_menus11" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="67165325-8103-4848-92bc-b33b731e50fc">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_men_menus/Seg_men_menus1" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="5cc19ca6-7314-4c85-9c1f-906a6bc24a1c">
+          <NavigationalProperty Id="cbb4e0cd-653d-4d72-974f-90fd2c4ebb08" name="Seg_oxm_opciones_x_menus" type="IList&lt;Seg_oxm_opciones_x_menu&gt;" accessModifier="Private" label="Seg_oxm_opciones_x_menus : IList&lt;Seg_oxm_opciones_x_menu&gt;" nullable="true" kind="Persistent" fieldName="_seg_oxm_opciones_x_menus" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="61242251-6a51-4f9f-850b-b646fa3bbd32">
+          <NavigationalProperty Id="217d0a43-6a3d-45c1-9c53-a2cb51263af4" name="Seg_men_menus1" type="Seg_men_menus" accessModifier="Private" label="Seg_men_menus1 : Seg_men_menus" nullable="true" kind="Persistent" fieldName="_seg_men_menus1" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="c80e6697-8dd5-40ec-8426-d0e2cfae6262">
+          <NavigationalProperty Id="e4838bbc-f7a9-4551-a93f-87343a4a9d89" name="Seg_men_menus11" type="IList&lt;Seg_men_menus&gt;" accessModifier="Private" label="Seg_men_menus11 : IList&lt;Seg_men_menus&gt;" nullable="true" kind="Persistent" fieldName="_seg_men_menus11" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="22dfc577-ddc3-4e04-b1a9-c0da2c9eaad2" name="Seg_axo_acciones_x_opcion" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="28a33af8-e8f1-48ba-8061-90ba9a978ded" name="Axo_codacc" type="Int32" label="Axo_codacc : Int32" kind="Persistent" identity="true" fieldName="_axo_codacc" />
+      <Property Id="3c8ee210-9c0e-43e0-85e3-6837dd66bd01" name="Axo_codopc" type="Int32" label="Axo_codopc : Int32" kind="Persistent" identity="true" fieldName="_axo_codopc" />
+      <AssociationTargets>
+        <Association Id="a9154b62-7eb7-4e5c-bb91-d23244f0ebda" SourceMultiplicity="One" name="Seg_axo_acciones_x_opcionHasSeg_opc_opciones">
+          <DomainClassMoniker name="/Entidades/Seg_opc_opciones" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="aab1bac8-9147-4be4-a4f2-a0f36d4d8d99">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_opc_opciones/Seg_axo_acciones_x_opcions" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="bf82526c-bca0-4270-918a-a5af359a628b">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_axo_acciones_x_opcion/Seg_opc_opciones" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="498471b5-f9bd-4168-be25-2fb9d81ee434" SourceMultiplicity="One" name="Seg_axo_acciones_x_opcionHasSeg_acc_acciones">
+          <DomainClassMoniker name="/Entidades/Seg_acc_acciones" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="a14d55f2-b266-42e9-9faa-b30261edc4c8">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_acc_acciones/Seg_axo_acciones_x_opcions" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="3b9a2a52-1f77-4f00-9064-cd6de4bd284b">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_axo_acciones_x_opcion/Seg_acc_acciones" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="9a716e30-d9df-4b8b-adef-e8f112babb0f">
+          <NavigationalProperty Id="da5a1ba8-3244-4b8d-a25f-34ab66444c05" name="Seg_opc_opciones" type="Seg_opc_opciones" accessModifier="Private" label="Seg_opc_opciones : Seg_opc_opciones" nullable="true" kind="Persistent" fieldName="_seg_opc_opciones" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="fd3f290a-73b4-4e75-9d99-0d478e90d0a3">
+          <NavigationalProperty Id="604fcfef-a895-4298-a328-cbb8ea5f57e3" name="Seg_acc_acciones" type="Seg_acc_acciones" accessModifier="Private" label="Seg_acc_acciones : Seg_acc_acciones" nullable="true" kind="Persistent" fieldName="_seg_acc_acciones" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="5a5d527b-161d-483b-8462-e47150138678">
+          <NavigationalProperty Id="1021a098-7d09-4047-83ff-42800eaca363" name="Seg_aro_autorizaciones_roles" type="IList&lt;Seg_aro_autorizaciones_role&gt;" accessModifier="Private" label="Seg_aro_autorizaciones_roles : IList&lt;Seg_aro_autorizaciones_role&gt;" nullable="true" kind="Persistent" fieldName="_seg_aro_autorizaciones_roles" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="1541798a-6499-442e-b42f-fd2f038a85a7" name="Seg_aro_autorizaciones_role" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="f6e15286-ed47-43fc-bb6a-8f5a26c0a046" name="Aro_codaxo" type="Int32" label="Aro_codaxo : Int32" kind="Persistent" identity="true" fieldName="_aro_codaxo" />
+      <Property Id="d1e1e45b-1a9c-45d9-a36b-d72f52bc61ac" name="Aro_codopc" type="Int32" label="Aro_codopc : Int32" kind="Persistent" identity="true" fieldName="_aro_codopc" />
+      <Property Id="a59e106e-2512-4780-a86a-f82e7d8bfc54" name="Aro_codrol" type="Int32" label="Aro_codrol : Int32" kind="Persistent" identity="true" fieldName="_aro_codrol" />
+      <AssociationTargets>
+        <Association Id="7edf5351-74db-4e02-a3e1-ad9407192f03" SourceMultiplicity="One" name="Seg_aro_autorizaciones_roleHasSeg_rol_roles">
+          <DomainClassMoniker name="/Entidades/Seg_rol_roles" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="8c1f2d34-262e-43dc-a3f8-bc7846890666">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_rol_roles/Seg_aro_autorizaciones_roles" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="882082f0-ff26-4ae8-934e-d98c4e4bf4b9">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_aro_autorizaciones_role/Seg_rol_roles" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="184b7df5-d2e3-4836-9cc4-51ad6332b938" SourceMultiplicity="One" name="Seg_aro_autorizaciones_roleHasSeg_axo_acciones_x_opcion">
+          <DomainClassMoniker name="/Entidades/Seg_axo_acciones_x_opcion" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="2b931c4a-9b0e-481a-b2ef-3a6d9c8d3a4a">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_axo_acciones_x_opcion/Seg_aro_autorizaciones_roles" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="a6bcaead-c59e-4fd2-8122-bdc2300a844a">
+              <NavigationalPropertyMoniker name="/Entidades/Seg_aro_autorizaciones_role/Seg_axo_acciones_x_opcion" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="4419dac7-ee56-413f-b756-09128fe52641">
+          <NavigationalProperty Id="5b16fa4a-c466-4047-9fc9-ad895d69c3e3" name="Seg_rol_roles" type="Seg_rol_roles" accessModifier="Private" label="Seg_rol_roles : Seg_rol_roles" nullable="true" kind="Persistent" fieldName="_seg_rol_roles" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="8911a116-0467-4cb8-aacc-19780465e8ac">
+          <NavigationalProperty Id="1290d128-785c-429f-9def-3b15d8df87bb" name="Seg_axo_acciones_x_opcion" type="Seg_axo_acciones_x_opcion" accessModifier="Private" label="Seg_axo_acciones_x_opcion : Seg_axo_acciones_x_opcion" nullable="true" kind="Persistent" fieldName="_seg_axo_acciones_x_opcion" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="39fe446d-645b-4782-b54e-09810c9e0246" name="Seg_acc_acciones" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="90067b38-931c-4af2-9f44-d750686562f6" name="Acc_codigo" type="Int32" label="Acc_codigo : Int32" kind="Persistent" identity="true" fieldName="_acc_codigo" />
+      <Property Id="978c24ae-6f18-41d5-a0a0-bb11ed593814" name="Acc_descripcion" label="Acc_descripcion : String" kind="Persistent" fieldName="_acc_descripcion" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="bca52343-02d1-4b1e-a76e-f7aba260162f">
+          <NavigationalProperty Id="40acc09f-2e3c-4675-a88a-838ee40b655b" name="Seg_axo_acciones_x_opcions" type="IList&lt;Seg_axo_acciones_x_opcion&gt;" accessModifier="Private" label="Seg_axo_acciones_x_opcions : IList&lt;Seg_axo_acciones_x_opcion&gt;" nullable="true" kind="Persistent" fieldName="_seg_axo_acciones_x_opcions" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="f8e9d00d-8134-4ea4-8646-3cd165cf353b" name="Pag_pag_pagos" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="626f17e8-a845-4be5-a317-2e59e0a6ceee" name="Pag_codcob" type="Int32" label="Pag_codcob : Int32" kind="Persistent" identity="true" fieldName="_pag_codcob" />
+      <Property Id="1a637f66-fc24-4037-ba22-ca7f0f2caa39" name="Pag_codsoc" type="Int32" label="Pag_codsoc : Int32" kind="Persistent" identity="true" fieldName="_pag_codsoc" />
+      <Property Id="d0db4f73-361b-4a10-91b0-a7bc246ced3a" name="Pag_año" type="Int32" label="Pag_año : Int32" kind="Persistent" fieldName="_pag_año" />
+      <Property Id="2798e4f0-57a9-4122-bb83-5ab38b9dc94d" name="Pag_fecha_recibido" type="DateTime" label="Pag_fecha_recibido : DateTime" kind="Persistent" fieldName="_pag_fecha_recibido" />
+      <Property Id="a61e0c01-70dd-4dfe-8570-9e6c54d64f6c" name="Pag_mes" type="Int32" label="Pag_mes : Int32" kind="Persistent" fieldName="_pag_mes" />
+      <Property Id="c570c153-f16b-4f95-afad-32c0f00db693" name="Pag_monto" type="Decimal" label="Pag_monto : Decimal" kind="Persistent" fieldName="_pag_monto" />
+      <Property Id="276b86da-e592-490a-89ef-09c49c9c218b" name="Pag_observaciones" label="Pag_observaciones : String" kind="Persistent" fieldName="_pag_observaciones" />
+      <Property Id="b44d3de1-63cf-4c02-9a35-0f0f3ec9eb23" name="Pag_usuario_modificacion" label="Pag_usuario_modificacion : String" kind="Persistent" fieldName="_pag_usuario_modificacion" />
+      <Property Id="33625570-f7dc-4779-acb4-8f468bf846e9" name="Pag_usuario_grabacion" label="Pag_usuario_grabacion : String" kind="Persistent" fieldName="_pag_usuario_grabacion" />
+      <Property Id="f4cbbb5a-eef8-45df-83c6-bb49cc077bd7" name="Pag_fecha_modificacion" type="DateTime" label="Pag_fecha_modificacion : DateTime" nullable="true" kind="Persistent" fieldName="_pag_fecha_modificacion" />
+      <Property Id="02b06fd3-56a2-4ed0-8421-524dfb66c4e0" name="Pag_fecha_grabacion" type="DateTime" label="Pag_fecha_grabacion : DateTime" nullable="true" kind="Persistent" fieldName="_pag_fecha_grabacion" />
+      <Property Id="98db5eb6-5391-4161-9b4b-efda70930551" name="Pag_numero_recibo" type="Int32" label="Pag_numero_recibo : Int32" kind="Persistent" fieldName="_pag_numero_recibo" />
+      <Property Id="07d74f77-a51e-4a2d-af58-feffab47f563" name="Pag_codigo" type="Int32" label="Pag_codigo : Int32" kind="Persistent" identity="true" fieldName="_pag_codigo" />
+      <AssociationTargets>
+        <Association Id="d9c2be91-d137-4095-8982-1967b2762a7e" SourceMultiplicity="One" name="Pag_pag_pagosHasSoc_soc_socios">
+          <DomainClassMoniker name="/Entidades/Soc_soc_socios" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="3f111ee6-2c41-48e2-bf17-623d3c687ee5">
+              <NavigationalPropertyMoniker name="/Entidades/Soc_soc_socios/Pag_pag_pagos" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="d5b94531-4b42-4b7d-adf3-1d790c3a55eb">
+              <NavigationalPropertyMoniker name="/Entidades/Pag_pag_pagos/Soc_soc_socios" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+        <Association Id="99a02feb-2e82-48dd-8584-4c339cb14c47" SourceMultiplicity="One" name="Pag_pag_pagosHasPag_cob_cobradores">
+          <DomainClassMoniker name="/Entidades/Pag_cob_cobradores" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="6502697a-8ff5-4004-87f3-37c4053693bc">
+              <NavigationalPropertyMoniker name="/Entidades/Pag_cob_cobradores/Pag_pag_pagos" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="4145e62c-58b2-4a42-9702-4e8d2b2dc86c">
+              <NavigationalPropertyMoniker name="/Entidades/Pag_pag_pagos/Pag_cob_cobradores" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="ec5bea7a-3621-41e5-858a-c42d278b801e">
+          <NavigationalProperty Id="a7763a33-1332-4be5-a992-edd5865f6997" name="Soc_soc_socios" type="Soc_soc_socios" accessModifier="Private" label="Soc_soc_socios : Soc_soc_socios" nullable="true" kind="Persistent" fieldName="_soc_soc_socios" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="2d253873-fdd8-4be5-8e40-5f5b6e7466a7">
+          <NavigationalProperty Id="6da2077f-7787-4783-bda0-6cef4231b56f" name="Pag_cob_cobradores" type="Pag_cob_cobradores" accessModifier="Private" label="Pag_cob_cobradores : Pag_cob_cobradores" nullable="true" kind="Persistent" fieldName="_pag_cob_cobradores" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="f6e6429b-160b-434f-aa64-b0607bf3f87e" name="Pag_cob_cobradores" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Cob_codigo">
+      <Property Id="e93c1240-e588-43c8-8853-27e2aac45cc7" name="Cob_codigo" type="Int32" label="Cob_codigo : Int32" kind="Persistent" identity="true" fieldName="_cob_codigo" />
+      <Property Id="0b646953-eb37-44ec-9f68-089df05edd6a" name="Cob_codper" type="Int32" label="Cob_codper : Int32" kind="Persistent" fieldName="_cob_codper" />
+      <Property Id="6f724f7b-a2d8-4bc5-8322-4384af721c46" name="Cob_porcentaje_comision" type="Decimal" label="Cob_porcentaje_comision : Decimal" nullable="true" kind="Persistent" fieldName="_cob_porcentaje_comision" />
+      <AssociationTargets>
+        <Association Id="0c4cb605-d617-4d65-b5d7-26aec36ac03e" SourceMultiplicity="One" name="Pag_cob_cobradoresHasGrl_per_personas">
+          <DomainClassMoniker name="/Entidades/Grl_per_personas" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="0c2a926e-7e6e-43d1-94cb-11f58551d3b8">
+              <NavigationalPropertyMoniker name="/Entidades/Grl_per_personas/Pag_cob_cobradores" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="74aeb5f7-c2eb-406a-b000-68fb98839872">
+              <NavigationalPropertyMoniker name="/Entidades/Pag_cob_cobradores/Grl_per_personas" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="8bfbfd98-3025-4188-841c-d53be2cc7954">
+          <NavigationalProperty Id="cd9f4d7d-d98c-418b-a724-4b5e77fca753" name="Pag_pag_pagos" type="IList&lt;Pag_pag_pagos&gt;" accessModifier="Private" label="Pag_pag_pagos : IList&lt;Pag_pag_pagos&gt;" nullable="true" kind="Persistent" fieldName="_pag_pag_pagos" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="3aee6a05-1c4b-4a62-b76e-bde40ae04adc">
+          <NavigationalProperty Id="c6ff873d-8ddd-4827-82f3-0ce6c6344b7b" name="Grl_per_personas" type="Grl_per_personas" accessModifier="Private" label="Grl_per_personas : Grl_per_personas" nullable="true" kind="Persistent" fieldName="_grl_per_personas" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="c64b11c6-7dad-470c-8d9f-d09c16f0b0fe" name="Grl_per_personas" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Per_codigo">
+      <Property Id="1d378a11-01ef-48e4-9c7d-e73fe144b3b0" name="Per_codigo" type="Int32" label="Per_codigo : Int32" kind="Persistent" identity="true" fieldName="_per_codigo" />
+      <Property Id="12c195a4-679a-41d0-8e69-e228737a95ea" name="Per_apellido_casada" label="Per_apellido_casada : String" kind="Persistent" fieldName="_per_apellido_casada" />
+      <Property Id="a7a07f62-d0fc-4dd8-9fcb-c78e9c5bb2c8" name="Per_cedula" label="Per_cedula : String" kind="Persistent" fieldName="_per_cedula" />
+      <Property Id="d7b2cadf-1d6b-4758-b6d9-c7ec380ad014" name="Per_celulares" label="Per_celulares : String" kind="Persistent" fieldName="_per_celulares" />
+      <Property Id="46125381-e192-4dbb-962e-43ac206da715" name="Per_correo_electronico" label="Per_correo_electronico : String" kind="Persistent" fieldName="_per_correo_electronico" />
+      <Property Id="401204f7-cf0a-4651-b817-18dc366a80ac" name="Per_departamento_extendida" label="Per_departamento_extendida : String" kind="Persistent" fieldName="_per_departamento_extendida" />
+      <Property Id="d186dcb9-c04d-4f21-b691-afb91df69e46" name="Per_direccion_cobro" label="Per_direccion_cobro : String" kind="Persistent" fieldName="_per_direccion_cobro" />
+      <Property Id="6c7e7a4e-8b13-4904-bda1-808644e852a4" name="Per_DPI" label="Per_DPI : String" kind="Persistent" fieldName="_per_DPI" />
+      <Property Id="402f141e-e96f-456c-859d-c322e3eaf7ea" name="Per_estado" label="Per_estado : String" kind="Persistent" fieldName="_per_estado" />
+      <Property Id="8eb931e7-752d-48cb-b7a8-0e64efb70f56" name="Per_fecha_nacimiento" type="DateTime" label="Per_fecha_nacimiento : DateTime" kind="Persistent" fieldName="_per_fecha_nacimiento" />
+      <Property Id="37035458-4f2c-410d-8557-523939f795bd" name="Per_foto" type="Byte[]" label="Per_foto : Byte[]" kind="Persistent" fieldName="_per_foto" />
+      <Property Id="276ee29f-fb35-43dc-a599-f9dab76c4df2" name="Per_municipio_extendida" label="Per_municipio_extendida : String" kind="Persistent" fieldName="_per_municipio_extendida" />
+      <Property Id="2f73073d-db99-44ec-b7de-7774a917443c" name="Per_nombre_completo" label="Per_nombre_completo : String" kind="Persistent" fieldName="_per_nombre_completo" />
+      <Property Id="7de6c033-397d-49cb-aa3e-dcf437cfe331" name="Per_primer_apellido" label="Per_primer_apellido : String" kind="Persistent" fieldName="_per_primer_apellido" />
+      <Property Id="74c76ca3-a098-4471-b0bb-9991943dab84" name="Per_primer_nombre" label="Per_primer_nombre : String" kind="Persistent" fieldName="_per_primer_nombre" />
+      <Property Id="c4ee71ae-9443-4386-8b3d-b79b17ff286b" name="Per_segundo_apellido" label="Per_segundo_apellido : String" kind="Persistent" fieldName="_per_segundo_apellido" />
+      <Property Id="6e6a5199-2f1f-4c47-b57e-b25739615a7d" name="Per_segundo_nombre" label="Per_segundo_nombre : String" kind="Persistent" fieldName="_per_segundo_nombre" />
+      <Property Id="ec826cfc-825c-4c61-a614-9f6b51a4a65e" name="Per_telefonos" label="Per_telefonos : String" kind="Persistent" fieldName="_per_telefonos" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="5980d1ca-17c4-4772-b158-9fd09aac8529">
+          <NavigationalProperty Id="bd4b70e7-8f7d-4d84-952f-5d6254424d2b" name="Soc_soc_socios" type="IList&lt;Soc_soc_socios&gt;" accessModifier="Private" label="Soc_soc_socios : IList&lt;Soc_soc_socios&gt;" nullable="true" kind="Persistent" fieldName="_soc_soc_socios" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="1b2e1b9b-e4ca-4a74-b4da-1b1cebeb82cd">
+          <NavigationalProperty Id="28df1e34-edd7-4128-8f57-4d45bc059572" name="Pag_cob_cobradores" type="IList&lt;Pag_cob_cobradores&gt;" accessModifier="Private" label="Pag_cob_cobradores : IList&lt;Pag_cob_cobradores&gt;" nullable="true" kind="Persistent" fieldName="_pag_cob_cobradores" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="1266e75b-6b70-4117-8370-3a4d73b40ee9" name="Sociosmorosos" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="9c47850f-9614-4936-a822-763ab45b49be" name="Anio_pago" type="Int32" label="Anio_pago : Int32" kind="Persistent" identity="true" fieldName="_anio_pago" />
+      <Property Id="c526d970-ddee-4d0c-a9d2-044138dd905d" name="Codigo_socio" label="Codigo_socio : String" kind="Persistent" identity="true" fieldName="_codigo_socio" />
+      <Property Id="b8615582-a5d7-43de-a028-3a632a146a65" name="Mes_pago" type="Int32" label="Mes_pago : Int32" kind="Persistent" identity="true" fieldName="_mes_pago" />
+      <Property Id="b22f42fe-8d93-46dc-8ecf-0ea117ae4009" name="Nombre_socio" label="Nombre_socio : String" kind="Persistent" fieldName="_nombre_socio" />
+      <Property Id="7e90942f-efd6-440d-8e59-f24299c63ba3" name="Tipo_socio" type="Int32" label="Tipo_socio : Int32" kind="Persistent" fieldName="_tipo_socio" />
+    </DomainClass>
+    <DomainClass Id="164fc09f-e717-4084-8a0c-a896c3db3c5c" name="Controlpagos" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="f3ca59e3-6854-488c-b422-218e555718ce" name="Anio_pago" type="Int32" label="Anio_pago : Int32" kind="Persistent" identity="true" fieldName="_anio_pago" />
+      <Property Id="172e0f0c-ccbf-4e71-a307-57616a5bf0d5" name="Cedula_socio" label="Cedula_socio : String" kind="Persistent" fieldName="_cedula_socio" />
+      <Property Id="602feb0e-26cb-4e6e-94e0-2b862697d21b" name="Codigo_socio" label="Codigo_socio : String" kind="Persistent" identity="true" fieldName="_codigo_socio" />
+      <Property Id="fe60646b-5d40-4e67-b29e-a7ee4cb12f45" name="Dpi_socio" label="Dpi_socio : String" kind="Persistent" fieldName="_dpi_socio" />
+      <Property Id="fcdfa74e-274f-4b77-a3f5-6f5aac6ca3f9" name="Mes_pago" type="Int32" label="Mes_pago : Int32" kind="Persistent" identity="true" fieldName="_mes_pago" />
+      <Property Id="6df39ffb-7440-432c-bf1f-aead45c208ac" name="Nombre_socio" label="Nombre_socio : String" kind="Persistent" fieldName="_nombre_socio" />
+      <Property Id="ec8a3c39-fabb-4d8f-b510-c563d7cca33e" name="Numero_recibo" type="Int32" label="Numero_recibo : Int32" kind="Persistent" fieldName="_numero_recibo" />
+      <Property Id="66915418-4d94-4de9-9aa7-58e5533be0e0" name="Tipo_socio" label="Tipo_socio : String" kind="Persistent" fieldName="_tipo_socio" />
+    </DomainClass>
+    <DomainClass Id="a5caa82f-c61f-4460-aa55-af6a3c23f456" name="Comisionxcobrador" namespace="scontrolpagos" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="ae68325c-442c-4d95-b914-a595afe0366c" name="Año_pago" type="Int32" label="Año_pago : Int32" kind="Persistent" identity="true" fieldName="_año_pago" />
+      <Property Id="f9ce1eaa-f03f-4886-8f80-ae277306bf48" name="Codigo_socio" label="Codigo_socio : String" kind="Persistent" identity="true" fieldName="_codigo_socio" />
+      <Property Id="3cd72292-5347-4440-b2cc-b0783bb86c04" name="Comision" type="Decimal" label="Comision : Decimal" nullable="true" kind="Persistent" fieldName="_comision" />
+      <Property Id="e7ba9635-cab8-4fe6-92c4-5da7bed9e325" name="Fecha_recibo" type="DateTime" label="Fecha_recibo : DateTime" kind="Persistent" fieldName="_fecha_recibo" />
+      <Property Id="819fada8-d6f7-4b6e-91cb-849a90123295" name="MES_PAGO" label="MES_PAGO : String" kind="Persistent" identity="true" fieldName="_mES_PAGO" />
+      <Property Id="08244e6e-5f90-4114-b62c-82783c81ccf1" name="Monto_recibo" type="Decimal" label="Monto_recibo : Decimal" kind="Persistent" fieldName="_monto_recibo" />
+      <Property Id="db9c813e-459b-434b-bb13-294e46630ae8" name="Nombre_cobrador" label="Nombre_cobrador : String" kind="Persistent" fieldName="_nombre_cobrador" />
+      <Property Id="930bbe9c-0aee-4e96-8766-f4b4e1805a6c" name="Nombre_socio" label="Nombre_socio : String" kind="Persistent" fieldName="_nombre_socio" />
+      <Property Id="58af53b4-d747-4553-8eb9-e0679edd9e9a" name="Numero_recibo" type="Int32" label="Numero_recibo : Int32" kind="Persistent" fieldName="_numero_recibo" />
+      <Property Id="3f90077d-b9ac-40af-8955-81bd1d5e98c3" name="Tipo_socio" label="Tipo_socio : String" kind="Persistent" fieldName="_tipo_socio" />
+    </DomainClass>
+    <DomainClass Id="7e762e63-908d-4edd-80d6-528a40760731" name="Pag_pag_pagos_hist" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Pag_correlativo">
+      <Property Id="0abadeaa-d748-4c9a-a74c-0365a1781209" name="Pag_correlativo" type="Int32" label="Pag_correlativo : Int32" kind="Persistent" identity="true" fieldName="_pag_correlativo" />
+      <Property Id="0b3fc02d-60c1-40c7-9337-f81a47d4d701" name="Pag_año" type="Int32" label="Pag_año : Int32" nullable="true" kind="Persistent" fieldName="_pag_año" />
+      <Property Id="4ccdff98-2f2d-4c2d-b0ba-925054382706" name="Pag_codcob" type="Int32" label="Pag_codcob : Int32" nullable="true" kind="Persistent" fieldName="_pag_codcob" />
+      <Property Id="31c0c2e7-4f6f-4cda-b680-896ebd73cfc5" name="Pag_codigo" type="Int32" label="Pag_codigo : Int32" nullable="true" kind="Persistent" fieldName="_pag_codigo" />
+      <Property Id="a1a532f7-ea7e-4793-8279-90b2517594d2" name="Pag_codsoc" type="Int32" label="Pag_codsoc : Int32" nullable="true" kind="Persistent" fieldName="_pag_codsoc" />
+      <Property Id="9db3e407-49cc-4229-940a-7b511af97046" name="Pag_fecha_grabacion" type="DateTime" label="Pag_fecha_grabacion : DateTime" nullable="true" kind="Persistent" fieldName="_pag_fecha_grabacion" />
+      <Property Id="eca667d3-4b18-4037-aae9-417e7858d289" name="Pag_fecha_modificacion" type="DateTime" label="Pag_fecha_modificacion : DateTime" nullable="true" kind="Persistent" fieldName="_pag_fecha_modificacion" />
+      <Property Id="44fa32fc-1cb1-40ec-b5b8-869938b91c3d" name="Pag_fecha_recibido" type="DateTime" label="Pag_fecha_recibido : DateTime" nullable="true" kind="Persistent" fieldName="_pag_fecha_recibido" />
+      <Property Id="c2dda4d7-9a78-42f1-8955-61af30d3c588" name="Pag_mes" type="Int32" label="Pag_mes : Int32" nullable="true" kind="Persistent" fieldName="_pag_mes" />
+      <Property Id="3fd021fc-f48b-449f-960a-d1927ce89489" name="Pag_monto" type="Decimal" label="Pag_monto : Decimal" nullable="true" kind="Persistent" fieldName="_pag_monto" />
+      <Property Id="50bb4aed-4f68-47e3-8bce-ef5a513031e9" name="Pag_numero_recibo" type="Int32" label="Pag_numero_recibo : Int32" nullable="true" kind="Persistent" fieldName="_pag_numero_recibo" />
+      <Property Id="266c5339-9473-4161-9711-25750d508e9b" name="Pag_observaciones" label="Pag_observaciones : String" kind="Persistent" fieldName="_pag_observaciones" />
+      <Property Id="22ddea2b-446c-4384-96cd-2d893b11cf7b" name="Pag_usuario_grabacion" label="Pag_usuario_grabacion : String" kind="Persistent" fieldName="_pag_usuario_grabacion" />
+      <Property Id="e67d48d3-a31d-4e62-9c7b-fe086326bbcc" name="Pag_usuario_modificacion" label="Pag_usuario_modificacion : String" kind="Persistent" fieldName="_pag_usuario_modificacion" />
+      <Property Id="6db83069-2dff-4c69-b023-c980e489b61a" name="Pag_descripcion" label="Pag_descripcion : String" kind="Persistent" fieldName="_pag_descripcion" />
+    </DomainClass>
+    <DomainClass Id="ca84013d-b694-4535-b36b-f7cfdf1ac917" name="Tar_tar_tarjetas" namespace="scontrolpagos" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Tar_codigo">
+      <Property Id="3ce02675-860c-4cb8-847d-3f04df1d5736" name="Tar_codigo" type="Int32" label="Tar_codigo : Int32" kind="Persistent" identity="true" fieldName="_tar_codigo" />
+      <Property Id="94822245-d65d-4fa0-861e-a8d405810999" name="Tar_estado" label="Tar_estado : String" kind="Persistent" fieldName="_tar_estado" />
+      <Property Id="ccfa74f4-8076-43c8-9a50-d0183b5d6786" name="Tar_fecha_grabacion" type="DateTime" label="Tar_fecha_grabacion : DateTime" nullable="true" kind="Persistent" fieldName="_tar_fecha_grabacion" />
+      <Property Id="450015de-87c3-46e6-ac32-c5a2b640777d" name="Tar_fecha_hora_activacion" type="DateTime" label="Tar_fecha_hora_activacion : DateTime" nullable="true" kind="Persistent" fieldName="_tar_fecha_hora_activacion" />
+      <Property Id="6e1ce58a-b49d-4008-ab42-4b4559d506ba" name="Tar_fecha_hora_fin_vigencia" type="DateTime" label="Tar_fecha_hora_fin_vigencia : DateTime" nullable="true" kind="Persistent" fieldName="_tar_fecha_hora_fin_vigencia" />
+      <Property Id="1587bec9-3445-4818-8ece-147857aaabc4" name="Tar_fecha_hora_ingreso" type="DateTime" label="Tar_fecha_hora_ingreso : DateTime" nullable="true" kind="Persistent" fieldName="_tar_fecha_hora_ingreso" />
+      <Property Id="6009fc8f-41de-41b9-81db-1891bc8fb8f9" name="Tar_fecha_hora_inicio_vigencia" type="DateTime" label="Tar_fecha_hora_inicio_vigencia : DateTime" nullable="true" kind="Persistent" fieldName="_tar_fecha_hora_inicio_vigencia" />
+      <Property Id="41043dc1-0d45-4c09-8cee-671425611ab3" name="Tar_fecha_modificacion" type="DateTime" label="Tar_fecha_modificacion : DateTime" nullable="true" kind="Persistent" fieldName="_tar_fecha_modificacion" />
+      <Property Id="91550388-69d5-4226-9c19-8e5b07241523" name="Tar_nombre" label="Tar_nombre : String" kind="Persistent" fieldName="_tar_nombre" />
+      <Property Id="666479e0-260e-4424-9cbf-0c0d4fd6112b" name="Tar_numero" type="Int32" label="Tar_numero : Int32" kind="Persistent" fieldName="_tar_numero" />
+      <Property Id="57dcd620-6b91-4963-8937-26117362a431" name="Tar_observaciones" label="Tar_observaciones : String" kind="Persistent" fieldName="_tar_observaciones" />
+      <Property Id="b1628e3c-3214-408c-8d8f-4cf2f702dfc8" name="Tar_tipo" type="Int32" label="Tar_tipo : Int32" kind="Persistent" fieldName="_tar_tipo" />
+      <Property Id="50a31eaa-6b4a-4231-8d33-664ee3a19b3f" name="Tar_UID_1" type="Int16" label="Tar_UID_1 : Int16" nullable="true" kind="Persistent" fieldName="_tar_UID_1" />
+      <Property Id="8c401b97-9b4e-480f-90d0-ef1c12a884eb" name="Tar_UID_2" type="Int16" label="Tar_UID_2 : Int16" nullable="true" kind="Persistent" fieldName="_tar_UID_2" />
+      <Property Id="990260f5-25ff-419a-af01-0ad23d9a7c4f" name="Tar_UID_3" type="Int16" label="Tar_UID_3 : Int16" nullable="true" kind="Persistent" fieldName="_tar_UID_3" />
+      <Property Id="b526cc21-b392-4dc4-b8dd-99db600d1804" name="Tar_UID_4" type="Int16" label="Tar_UID_4 : Int16" nullable="true" kind="Persistent" fieldName="_tar_UID_4" />
+      <Property Id="2a2fde69-743d-4e62-a5fc-c98c3853b310" name="Tar_usuario_grabacion" label="Tar_usuario_grabacion : String" kind="Persistent" fieldName="_tar_usuario_grabacion" />
+      <Property Id="b7fbd220-2aae-4a5e-b970-aaef40584b3b" name="Tar_usuario_modificacion" label="Tar_usuario_modificacion : String" kind="Persistent" fieldName="_tar_usuario_modificacion" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="06ceb285-c790-482e-b48f-9407b837ad27">
+      <domainContainer name="Entidades" namespace="scontrolpagos" showPropertiesCompartment="true">
+        <entitySetProperty name="Soc_tds_tipos_de_socios" namespace="scontrolpagos" type="Soc_tds_tipos_de_socios" label="Soc_tds_tipos_de_socios : IQueryable&lt;scontrolpagos.Soc_tds_tipos_de_socios&gt;" />
+        <entitySetProperty name="Soc_soc_socios" namespace="scontrolpagos" type="Soc_soc_socios" label="Soc_soc_socios : IQueryable&lt;scontrolpagos.Soc_soc_socios&gt;" />
+        <entitySetProperty name="Seg_uxr_usuarios_x_roles" namespace="scontrolpagos" type="Seg_uxr_usuarios_x_role" label="Seg_uxr_usuarios_x_roles : IQueryable&lt;scontrolpagos.Seg_uxr_usuarios_x_role&gt;" />
+        <entitySetProperty name="Seg_usu_usuarios" namespace="scontrolpagos" type="Seg_usu_usuarios" label="Seg_usu_usuarios : IQueryable&lt;scontrolpagos.Seg_usu_usuarios&gt;" />
+        <entitySetProperty name="Seg_rol_roles" namespace="scontrolpagos" type="Seg_rol_roles" label="Seg_rol_roles : IQueryable&lt;scontrolpagos.Seg_rol_roles&gt;" />
+        <entitySetProperty name="Seg_oxm_opciones_x_menus" namespace="scontrolpagos" type="Seg_oxm_opciones_x_menu" label="Seg_oxm_opciones_x_menus : IQueryable&lt;scontrolpagos.Seg_oxm_opciones_x_menu&gt;" />
+        <entitySetProperty name="Seg_opc_opciones" namespace="scontrolpagos" type="Seg_opc_opciones" label="Seg_opc_opciones : IQueryable&lt;scontrolpagos.Seg_opc_opciones&gt;" />
+        <entitySetProperty name="Seg_men_menus" namespace="scontrolpagos" type="Seg_men_menus" label="Seg_men_menus : IQueryable&lt;scontrolpagos.Seg_men_menus&gt;" />
+        <entitySetProperty name="Seg_axo_acciones_x_opcions" namespace="scontrolpagos" type="Seg_axo_acciones_x_opcion" label="Seg_axo_acciones_x_opcions : IQueryable&lt;scontrolpagos.Seg_axo_acciones_x_opcion&gt;" />
+        <entitySetProperty name="Seg_aro_autorizaciones_roles" namespace="scontrolpagos" type="Seg_aro_autorizaciones_role" label="Seg_aro_autorizaciones_roles : IQueryable&lt;scontrolpagos.Seg_aro_autorizaciones_role&gt;" />
+        <entitySetProperty name="Seg_acc_acciones" namespace="scontrolpagos" type="Seg_acc_acciones" label="Seg_acc_acciones : IQueryable&lt;scontrolpagos.Seg_acc_acciones&gt;" />
+        <entitySetProperty name="Pag_pag_pagos" namespace="scontrolpagos" type="Pag_pag_pagos" label="Pag_pag_pagos : IQueryable&lt;scontrolpagos.Pag_pag_pagos&gt;" />
+        <entitySetProperty name="Pag_cob_cobradores" namespace="scontrolpagos" type="Pag_cob_cobradores" label="Pag_cob_cobradores : IQueryable&lt;scontrolpagos.Pag_cob_cobradores&gt;" />
+        <entitySetProperty name="Grl_per_personas" namespace="scontrolpagos" type="Grl_per_personas" label="Grl_per_personas : IQueryable&lt;scontrolpagos.Grl_per_personas&gt;" />
+        <entitySetProperty name="Sociosmorosos" namespace="scontrolpagos" type="Sociosmorosos" label="Sociosmorosos : IQueryable&lt;scontrolpagos.Sociosmorosos&gt;" />
+        <entitySetProperty name="Controlpagos" namespace="scontrolpagos" type="Controlpagos" label="Controlpagos : IQueryable&lt;scontrolpagos.Controlpagos&gt;" />
+        <entitySetProperty name="Comisionxcobradors" namespace="scontrolpagos" type="Comisionxcobrador" label="Comisionxcobradors : IQueryable&lt;scontrolpagos.Comisionxcobrador&gt;" />
+        <entitySetProperty name="Pag_pag_pagos_hists" namespace="scontrolpagos" type="Pag_pag_pagos_hist" label="Pag_pag_pagos_hists : IQueryable&lt;scontrolpagos.Pag_pag_pagos_hist&gt;" />
+        <entitySetProperty name="Tar_tar_tarjetas" namespace="scontrolpagos" type="Tar_tar_tarjetas" label="Tar_tar_tarjetas : IQueryable&lt;scontrolpagos.Tar_tar_tarjetas&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

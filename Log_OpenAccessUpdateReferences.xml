@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_ConvertModelWizard_Files\UpgradeReferences.xslt"?>
+<UpgradeLog>
+  <Events>
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\scontrolpagos.vbproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\scontrolpagos.vbproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\scontrolpagos.vbproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\App.Config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\App.Config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\App.Config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\App.Config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\App.Config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\App.Config" Message="App.Config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmCobradores.resx" Message="frmCobradores.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmLogin.resx" Message="frmLogin.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmNotificacion.resx" Message="frmNotificacion.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmPagos.resx" Message="frmPagos.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmPrincipal.resx" Message="frmPrincipal.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmReporte1.resx" Message="frmReporte1.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmReporte2.resx" Message="frmReporte2.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmReporte3.resx" Message="frmReporte3.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmRoles.resx" Message="frmRoles.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmSalir.resx" Message="frmSalir.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmSocios.resx" Message="frmSocios.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmTipoSocio.resx" Message="frmTipoSocio.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\frmUsuarios.resx" Message="frmUsuarios.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\My Project\Resources.resx" Message="Resources.resx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\scontrolpagos.vbproj" Message="scontrolpagos" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\s.sln" Message="s" />
+  </Events>
+</UpgradeLog>

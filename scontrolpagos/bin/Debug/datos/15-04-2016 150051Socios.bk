@@ -1,0 +1,133 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>1</pag_codigo>
+    <pag_codsoc>3</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>1</pag_mes>
+    <pag_aÃ_x00B1_o>2015</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>9561</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:14:25-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>2</pag_codigo>
+    <pag_codsoc>4</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>1</pag_mes>
+    <pag_aÃ_x00B1_o>2015</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>9592</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:14:25-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>3</pag_codigo>
+    <pag_codsoc>5</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>1</pag_mes>
+    <pag_aÃ_x00B1_o>2015</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>9584</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:14:25-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>4</pag_codigo>
+    <pag_codsoc>3</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>2</pag_mes>
+    <pag_aÃ_x00B1_o>2015</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>9647</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:14:38-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>5</pag_codigo>
+    <pag_codsoc>4</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>2</pag_mes>
+    <pag_aÃ_x00B1_o>2015</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>9730</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:14:38-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>6</pag_codigo>
+    <pag_codsoc>5</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>2</pag_mes>
+    <pag_aÃ_x00B1_o>2015</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>9648</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:14:38-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>7</pag_codigo>
+    <pag_codsoc>6</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>2</pag_mes>
+    <pag_aÃ_x00B1_o>2015</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>10068</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:14:38-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>8</pag_codigo>
+    <pag_codsoc>3</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>1</pag_mes>
+    <pag_aÃ_x00B1_o>2016</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>11838</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:19:21-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>9</pag_codigo>
+    <pag_codsoc>4</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>1</pag_mes>
+    <pag_aÃ_x00B1_o>2016</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>11908</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:19:21-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+  <PAG_PAG_PAGOS>
+    <pag_codigo>10</pag_codigo>
+    <pag_codsoc>5</pag_codsoc>
+    <pag_codcob>1</pag_codcob>
+    <pag_monto>1000.00</pag_monto>
+    <pag_mes>1</pag_mes>
+    <pag_aÃ_x00B1_o>2016</pag_aÃ_x00B1_o>
+    <pag_numero_recibo>11935</pag_numero_recibo>
+    <pag_fecha_recibido>2016-04-12T00:00:00-06:00</pag_fecha_recibido>
+    <pag_observaciones>Carga Manual</pag_observaciones>
+    <pag_usuario_grabacion>root@localhost</pag_usuario_grabacion>
+    <pag_fecha_grabacion>2016-04-12T14:19:21-06:00</pag_fecha_grabacion>
+  </PAG_PAG_PAGOS>
+</NewDataSet>

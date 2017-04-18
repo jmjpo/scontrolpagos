@@ -1,0 +1,190 @@
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe.config
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.pdb
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\bin\Debug\DataAccess.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbprojResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmUsuarios.resources
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.Resources.resources
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbproj.GenerateResource.Cache
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.exe
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.xml
+C:\Users\Juan\Documents\Visual Studio 2013\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.pdb
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe.config
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.exe
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.xml
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.pdb
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbprojResolveAssemblyReference.cache
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmLogin.resources
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmPrincipal.resources
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSalir.resources
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmRoles.resources
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmTipoSocio.resources
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmUsuarios.resources
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.Resources.resources
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbproj.GenerateResource.Cache
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.pdb
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.xml
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\DataAccess.dll
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\MySql.Data.dll
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\libforms.pdb
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\libforms.xml
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\Juan\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSocios.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe.config
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.pdb
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.xml
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\DataAccess.dll
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\libforms.dll
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\MySql.Data.dll
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.dll
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.Runtime.dll
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\libforms.pdb
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\libforms.xml
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.xml
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportarTarjeta.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte5.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportar.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmImportar.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte4.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte3.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte2.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmNotificacion.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmpagos.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmCobradores.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmLogin.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmPrincipal.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte1.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSalir.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmRoles.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSocios.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmTipoSocio.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmUsuarios.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.Resources.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbproj.GenerateResource.Cache
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.exe
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.xml
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.pdb
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmEliminarpagos.resources
+C:\Users\jmperez\Documents\Visual Studio 2012\Projects\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbprojResolveAssemblyReference.cache
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe.config
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.exe
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.xml
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.pdb
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.pdb
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.xml
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\DataAccess.dll
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\MySql.Data.dll
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.dll
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.Runtime.dll
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\libforms.pdb
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\libforms.xml
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.xml
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbprojResolveAssemblyReference.cache
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmEliminarpagos.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportarTarjeta.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte5.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportar.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmImportar.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte4.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte3.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte2.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmNotificacion.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmpagos.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmCobradores.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmLogin.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmPrincipal.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte1.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSalir.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmRoles.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSocios.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmTipoSocio.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmUsuarios.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.Resources.resources
+C:\Users\jmperez\Desktop\MOVER\Personal\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbproj.GenerateResource.Cache
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe.config
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.exe
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.xml
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.pdb
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.pdb
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.xml
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\DataAccess.dll
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\MySql.Data.dll
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.dll
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.Runtime.dll
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\libforms.pdb
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\libforms.xml
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.xml
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbprojResolveAssemblyReference.cache
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmEliminarpagos.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportarTarjeta.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte5.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportar.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmImportar.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte4.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte3.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte2.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmNotificacion.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmpagos.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmCobradores.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmLogin.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmPrincipal.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte1.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSalir.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmRoles.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSocios.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmTipoSocio.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmUsuarios.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.Resources.resources
+C:\Users\jmperez\Desktop\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbproj.GenerateResource.Cache
+C:\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe.config
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.exe
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.xml
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.pdb
+C:\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.exe
+C:\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.pdb
+C:\scontrolpagos\scontrolpagos\bin\Debug\scontrolpagos.xml
+C:\scontrolpagos\scontrolpagos\bin\Debug\DataAccess.dll
+C:\scontrolpagos\scontrolpagos\bin\Debug\MySql.Data.dll
+C:\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.dll
+C:\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.Runtime.dll
+C:\scontrolpagos\scontrolpagos\bin\Debug\libforms.pdb
+C:\scontrolpagos\scontrolpagos\bin\Debug\libforms.xml
+C:\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.xml
+C:\scontrolpagos\scontrolpagos\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbprojResolveAssemblyReference.cache
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmEliminarpagos.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportarTarjeta.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte5.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmExportar.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmImportar.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte4.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte3.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte2.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmNotificacion.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmpagos.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmCobradores.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmLogin.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmPrincipal.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmReporte1.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSalir.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmRoles.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmSocios.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmTipoSocio.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.frmUsuarios.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.Resources.resources
+C:\scontrolpagos\scontrolpagos\obj\Debug\scontrolpagos.vbproj.GenerateResource.Cache

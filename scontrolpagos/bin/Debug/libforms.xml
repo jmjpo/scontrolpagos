@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+libforms
+</name>
+</assembly>
+<members>
+<member name="P:libforms.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:libforms.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:libforms.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:libforms.libforms.TxtmontoKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Handler para el envento KeyPress que permite la funcionalidad de limitar el ingreso de caracteres
+ solo a numeros y el punto decimal (.)
+ </summary>
+	<remarks>Se valida que solo se ingresen dos caracteres despues del punto decimal (.),
+ tambien se valida que solo se ingrese un punto decimal (.)</remarks>
+</member><member name="M:libforms.libforms.TxtnumeroKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Handler para el evento KeyPress que permite la funcionalidad de limitar el ingreso de caracteres 
+ solo a numeros 
+ </summary>
+	<remarks>No se permite el ingreso del punto decimal (.)</remarks>
+</member><member name="M:libforms.libforms.TxtmontoKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Handler para el evento Keydown que permite la funcionalidad de pasar o regresar el foco a otro control,
+ Ademas formatea el texto a numero con separador de miles y dos decimales
+ </summary>
+	<remarks>Las teclas que valida para pasar al control siguiente es Enter, Abajo, Escape;
+ La tecla que se valida para regresar al control anterior es Arriba</remarks>
+</member><member name="M:libforms.libforms.TxtKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ Handler para el evento KeyDown que permite la funcionalidad de pasar o regresar el foco a otro control
+ </summary>
+	<remarks>Las teclas que valida para pasar al control siguiente es Enter, Abajo, Escape;
+ La tecla que se valida para regresar al control anterior es Arriba</remarks>
+</member><member name="M:libforms.libforms.TxtmontoLostFocus(System.Object,System.EventArgs)">
+	<summary>
+ Handler para el evento LostFocus que permite la formatear y validar el ingreso correcto al textbox
+ </summary>
+	<remarks>Se ingresa el valor 0.00 si no tiene ningun dato el textbox o solo tiene un . (punto)</remarks>
+</member><member name="M:libforms.libforms.ExportarXls(System.Data.DataTable,System.String)">
+	<summary>
+ Exporta el datatable pasado como parametros a un archivo de texto separado por tabuladores 
+ para que sea entendido por excel como una hoja de calculo
+ </summary>
+	<param name="dtabledatos">DataTable con datos a exportar</param>
+	<param name="snombrearchivo">Direccion y nombre del archivo a exportar</param>
+	<remarks>Se verficia si en el conjunto de datos existe una columna de UPC, para agregar 
+ el ' y asi evitar que convierta a numeros los codigos de los productos</remarks>
+</member><member name="M:libforms.libforms.TxtLog(System.String,System.String)">
+	<summary>
+ Ingresa una linea de texto en el archivo especificado
+ </summary>
+	<param name="slinea">Linea a agregar al archivo</param>
+	<param name="snombrearchivo">Ruta y nombre del archivo</param>
+</member>
+</members>
+</doc>
